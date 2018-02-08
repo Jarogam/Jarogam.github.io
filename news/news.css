@@ -1,0 +1,158 @@
+.main-menu{
+background-color: #469437;
+width: 100%;
+height: 47px;
+text-align: center;
+}
+.logo{
+padding-left: 140px;
+padding-top: 25px;
+z-index: 9;
+position: absolute;
+}
+.main-menu ul li{
+float: left;
+list-style: none;
+margin-top: 12px;
+}
+.main-menu ul li a{	
+color: #fff;
+padding: 8px;
+text-decoration: none;
+}
+.main-menu ul li a:hover{
+color: #ffdb00;
+}
+.flag{
+margin-right: 130px;
+margin-top: 12px;
+}
+.flag i{
+color: #fff;
+}
+
+@media (max-width: 550px) {
+.main-menu{
+	width: 100%;
+	height: 170px;
+	padding-left: 5px;
+	}
+.main-menu ul{
+	margin-top: 90px;
+	}
+.logo{
+	margin-right: 105px;	
+	}
+.flag{
+	padding-left: 345px;
+	padding-top: 30px;
+	position: absolute;
+	}
+.flag i{
+	color: #fff;
+	}
+.content-image img{
+	height: 220px;
+	}
+}
+.grass img{
+width: 100%;
+}
+.navigation{
+color: #fff;
+position: absolute;
+padding-left: 30%;
+padding-top: 1%;
+}
+.navigation a{
+color: #fff;
+text-decoration: none;
+}
+h1{
+position: absolute;
+color: #fff;
+padding-top: 70px;
+padding-left: 150px;
+}
+.come-to-news{
+position: absolute;
+color: #469437;
+padding-top: 60px;
+padding-left: 150px;
+}
+.content-img img{
+background: #ebebeb;
+width: 100%;
+height: 765px;
+}
+.content-item{
+margin-left: 45px;
+width: 78%;
+height: 804px;
+background: #fff;
+position: absolute;
+z-index: 99999;
+top: 200px;
+}
+.content-item{
+padding-top: 15px;
+padding-left: 38px;
+}
+.content-item a{
+color: #469437;
+padding-left: 5px;
+text-decoration: none;
+}
+.content-item{
+width: 78%;
+}
+.content-item p{
+width: 89%;
+}
+.content-item_news-block{
+	height: 350px;
+	padding-top: 15px
+}
+.content-item_more-news{
+	margin-top: 25px;
+	text-align: center;
+	color: #000;
+}
+.content-item_more-news a{
+	color: #000;
+	border-bottom: 2px dotted #000;
+	text-decoration: none;
+}
+.content-item_more-news i{
+padding-top: 15px;
+}
+@media (max-width: 550px) {
+	.content-img img {
+    background: #ebebeb;
+    width: 100%;
+    height: 2179px;
+}
+	.content img{
+	background: #ebebeb;
+	width: 100%;
+	}
+	.content-item{
+	height: 2207px;
+	font-size: 10px;
+}
+	.footer{
+	height: 212px !important;
+	}
+}
+.footer{
+background-color: #045f00;
+width: 100%;
+height: 100px;
+color: #fff;
+}
+.footer p{
+padding-top: 20px;
+}
+.gmail{
+color: #479938;
+}
