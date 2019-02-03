@@ -117,7 +117,7 @@ body {
 .wrapping-box .down_wrapping-text {
   color: grey;
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 10px;
 }
 .bottom-box {
   width: 15%;
