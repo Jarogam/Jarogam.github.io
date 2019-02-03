@@ -168,10 +168,16 @@ body {
     /* padding-right: 4px; */
     font-size: 1rem;
   }
+  .wrap_clock-panel img{
+    width: 6%;
+  }
   .wrapping-box .box .box-number {
     padding-right: 3px;
     font-size: 1.5rem;
     text-align: center;
+}
+  .weather .wrap-main .wrap_clock-panel {
+    font-size: 2em;
 }
 .wrapping-box_waves{
   padding-top: 50px;
