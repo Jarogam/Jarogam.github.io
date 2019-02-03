@@ -66,6 +66,9 @@ body {
   width: 100%;
   color: #fff;
 }
+.o2{
+      padding-top: 10px;
+}
 .wrapping-box .box .box-inner {
   height: 105px;
 }
