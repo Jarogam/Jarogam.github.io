@@ -200,7 +200,10 @@ body {
 .weather .feedstop img {
   margin: 45px 4px;
 }
-
+@media (max-width: 500px)
+.wrap_clock-panel img {
+    width: 10%;
+}
 }
 .test{
   border: 1px solid orange;
