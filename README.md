@@ -1,1 +1,0 @@
-# Jarogam.github.io
