@@ -1,0 +1,30 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+height: 50px;
+width: 100%;
+background-color: #2b3b4a;
+}
+header ul{
+ list-style: none;
+ display: flex;
+ justify-content: space-evenly;
+}
+header ul li{
+    float: left;
+    text-align: center;
+}
+header ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+main{
+height: 500px;
+}
+footer{
+height: 150px;
+width: 100%;
+background-color: #2b3b4a;
+}
