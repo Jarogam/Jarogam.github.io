@@ -10,7 +10,7 @@
 
 </head>
 <body>
-<header>
+<header class="header">
     <div class="container">
         <nav class="menu">
             <div class="menu-btn">
@@ -52,61 +52,12 @@
             </div>
             <div class="menu-mobile">
                 <a href="tel:+74954314043">+7 (495) 431 - 40 - 43</a>
-                <a href="#" data-toggle="modal" data-target="#menu-mobile">Заказать звонок</a>
+                <a href="#" data-toggle="modal" data-target="#callback">Заказать звонок</a>
             </div>
-
-
-
         </nav>
     </div>
 </header>
-        <!-- Modal -->
-        <div class="modal fade" id="menu-mobile" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form method="POST" action="send.php">
-                            <div class="requestform__wrapper">
-                                <h2>Бесплатный вызов</h2>
-                                <p>Укажыте свои контакты и получите ознакомительное КП<br>
-                                    для понимания стоимости и сроков.</p>
-                                <div class="row">
-                                    <div class="col-xl-6 col-lg-6 col-sm-12 col-12">
-                                        <span class="requestform__wrapper--line">
-                                            <input type="tel" name="phone" placeholder="Введите Ваш телефон">
-                                        </span>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-sm-12 col-12">
-                                        <span class="requestform__wrapper--line">
-                                            <input type="email" name="email" placeholder="Введите ваш E-mail">
-                                        </span>
-        
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xl-12">
-                                        <span class="requestform__wrapper--line">
-                                            <input type="text" name="descr" placeholder="Введите Ваше сообщение">
-                                        </span>
-                                    </div>
-                                </div>
-                                <input type="submit" value="Оставить заявку" class="btn-request">
-                                <label class="check">
-                                    <input type="checkbox" class="check__input" checked>
-                                    <span class="check__box"></span>
-                                    Отправляя форму, я даю согласие на обработку <a href="#">персональных данных</a>
-                                </label>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 <main>
     <section class="home" id="home">
         <div class="container">
@@ -131,7 +82,7 @@
                     <div class="main__icon-block">
                         <img src="img/icons/winner.svg" alt="winner">
                         <span><b>опыт</b></span>
-                        <p>Наша компания на рынке уже более 15 лет</p>
+                        <p>Наша компания на рынке уже более 5 лет</p>
                     </div>
                     
 
@@ -147,63 +98,7 @@
                 </div>
             </div>
             <div class="home__request">
-                <a href="#!" data-toggle="modal" data-target="#home__request">Заявка на разчет</a>
-                
-                <!-- Modal -->
-                <div class="modal fade" id="home__request" tabindex="-1" role="dialog"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <form method="POST" action="send.php">
-                                    <div class="requestform__wrapper">
-                                        <h2>Заявка на расчет</h2>
-                                        <p>Укажыте свои контакты и получите ознакомительное КП<br>
-                                            для понимания стоимости и сроков.</p>
-                                        <div class="row">
-                                            <div class="col-xl-6 col-lg-6 col-12">
-                                                <span class="requestform__wrapper--line">
-                                                    <input type="tel" name="phone" placeholder="Введите Ваш телефон">
-                                                </span>
-                                            </div>
-                                            <div class="col-xl-6 col-lg-6 col-12">
-                                                <span class="requestform__wrapper--line">
-                                                    <input type="email" name="email" placeholder="Введите ваш E-mail">
-                                                </span>
-                
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xl-12">
-                                                <span class="requestform__wrapper--line">
-                                                    <input type="text" placeholder="Введите Ваше сообщение">
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <input type="file" name="file" id="file" class="inputfile">
-                                        <label for="file">
-                                            <img src="img/icons/upload.svg" alt="upload">
-                                            Загрузить ескиз
-                                        </label>
-                                        <input type="submit" value="Оставить заявку" class="btn-request">
-                                        <label class="check">
-                                            <input type="checkbox" class="check__input" checked>
-                                            <span class="check__box"></span>
-                                            Отправляя форму, я даю согласие на обработку <a href="#">персональных данных</a>
-                                        </label>
-                
-                                    </div>
-                                </form>
-                
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <a href="#!" data-toggle="modal" data-target="#requestpayment">Заявка на расчет</a>
             </div>
         </div>
     </section>
@@ -220,8 +115,12 @@
                         <div class="catalog__showerdoor--swiper">
                             <div class="swiper-container swiper-showerdoor">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><img src="img/door.jpg" alt="door"></div>
-                                    <div class="swiper-slide"><img src="img/door.jpg" alt="door"></div>
+<!--                                     <div class="swiper-slide"><img src="img/door.jpg" alt="door"></div> -->
+                                    <div class="swiper-slide"><img src="img/door/DSC_0443.JPG" alt="door"></div>
+
+                                    <div class="swiper-slide"><img src="img/door/DSC_0438.JPG" alt="door"></div>
+                                    <div class="swiper-slide"><img src="img/door/DSC_0439.JPG" alt="door"></div>
+                                    <div class="swiper-slide"><img src="img/door/DSC_0445.JPG" alt="door"></div>
                                 </div>
                                 <div class="swiper-navigation">
                                     <div class="swiper-button-prev">
@@ -269,119 +168,14 @@
                                 <li> - Ручка - кноб</li>
                                 <li> - рофиль притвора на стену, магнитный уплотнитель, прозрачный порог</li>
                             </ul>
-                            <a href="#" class="btn-request"  data-toggle="modal" data-target="#catalog__showerdoor__btn">Заявка на разчет</a>
+                            <a href="#" class="btn-request"  data-toggle="modal" data-target="#requestpayment">Заявка на расчет</a>
 
-                            <!-- Modal -->
-                            <div class="modal fade" id="catalog__showerdoor__btn" tabindex="-1" role="dialog"
-                                aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form method="POST" action="send.php">
-                                                <div class="requestform__wrapper">
-                                                    <h2>Заявка на расчет</h2>
-                                                    <p>Укажыте свои контакты и получите ознакомительное КП<br>
-                                                        для понимания стоимости и сроков.</p>
-                                                    <div class="row">
-                                                        <div class="col-xl-6 col-lg-6 col-12">
-                                                            <span class="requestform__wrapper--line">
-                                                                <input type="tel" name="phone" placeholder="Введите Ваш телефон">
-                                                            </span>
-                                                        </div>
-                                                        <div class="col-xl-6 col-lg-6 col-12">
-                                                            <span class="requestform__wrapper--line">
-                                                                <input type="email" name="email" placeholder="Введите ваш E-mail">
-                                                            </span>
-                                
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-xl-12">
-                                                            <span class="requestform__wrapper--line">
-                                                                <input type="text" name="descr" placeholder="Введите Ваше сообщение">
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                    <input type="file" name="file" id="file1" class="inputfile">
-                                                    <label for="file1">
-                                                        <img src="img/icons/upload.svg" alt="upload">
-                                                        Загрузить ескиз
-                                                    </label>
-                                                    <input type="submit" value="Оставить заявку" class="btn-request">
-                                                    <label class="check">
-                                                        <input type="checkbox" class="check__input" checked>
-                                                        <span class="check__box"></span>
-                                                        Отправляя форму, я даю согласие на обработку <a href="#">персональных данных</a>
-                                                    </label>
-                                
-                                                </div>
-                                            </form>
-                                
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
                            <div class="catalog__showerdoor--description__free--call">
                                 <img src="img/icons/freeZamershikBut.svg" alt="freeZamershikBut">
-                                <a href="#"  data-toggle="modal" data-target="#catalog__showerdoor-a"> Бесплатный вызов
+                                <a href="#"  data-toggle="modal" data-target="#freecallgager"> Бесплатный вызов
                                     замерщика</a>
 
-                            <!-- Modal -->
-                            <div class="modal fade" id="catalog__showerdoor-a" tabindex="-1" role="dialog"
-                                aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form method="POST" action="send.php">
-                                                <div class="requestform__wrapper">
-                                                    <h2>Бесплатный вызов</h2>
-                                                    <p>Укажыте свои контакты и получите ознакомительное КП<br>
-                                                        для понимания стоимости и сроков.</p>
-                                                    <div class="row">
-                                                        <div class="col-xl-6 col-lg-6 col-12">
-                                                            <span class="requestform__wrapper--line">
-                                                                <input type="tel" name="phone" placeholder="Введите Ваш телефон">
-                                                            </span>
-                                                        </div>
-                                                        <div class="col-xl-6 col-lg-6 col-12">
-                                                            <span class="requestform__wrapper--line">
-                                                                <input type="email" name="email" placeholder="Введите ваш E-mail">
-                                                            </span>
-                            
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-xl-12">
-                                                            <span class="requestform__wrapper--line">
-                                                                <input type="text" name="descr" placeholder="Введите Ваше сообщение">
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                    <input type="submit" value="Оставить заявку" class="btn-request">
-                                                    <label class="check">
-                                                        <input type="checkbox" class="check__input" checked>
-                                                        <span class="check__box"></span>
-                                                        Отправляя форму, я даю согласие на обработку <a href="#">персональных данных</a>
-                                                    </label>
-                            
-                                                </div>
-                                            </form>
-                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                            </div>
                         </div>
                     </div>
@@ -426,119 +220,14 @@
                                 <li> - Ручка скоба (Premium black)</li>
                                 <li> - Магнитный уплотнитель 90 гр, алюминиевый порог от перелива</li>
                             </ul>
-                            <div class="catalog__showerscreen--description__free--call">
-                                <img src="img/icons/freeZamershikBut.svg" alt="freeZamershikBut">
-                                <a href="#!"  data-toggle="modal" data-target="#catalog__showerscreen-a"> Бесплатный вызов
-                                    замерщика</a>
-
-                                <!-- Modal -->
-                                <div class="modal fade" id="catalog__showerscreen-a" tabindex="-1" role="dialog"
-                                    aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form method="POST" action="send.php">
-                                                    <div class="requestform__wrapper">
-                                                        <h2>Бесплатный вызов</h2>
-                                                        <p>Укажыте свои контакты и получите ознакомительное КП<br>
-                                                            для понимания стоимости и сроков.</p>
-                                                        <div class="row">
-                                                            <div class="col-xl-6 col-lg-6 col-12">
-                                                                <span class="requestform__wrapper--line">
-                                                                    <input type="tel" name="phone" placeholder="Введите Ваш телефон">
-                                                                </span>
-                                                            </div>
-                                                            <div class="col-xl-6 col-lg-6 col-12">
-                                                                <span class="requestform__wrapper--line">
-                                                                    <input type="email" name="email" placeholder="Введите ваш E-mail">
-                                                                </span>
-                                    
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-xl-12">
-                                                                <span class="requestform__wrapper--line">
-                                                                    <input type="text" name="descr" placeholder="Введите Ваше сообщение">
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <input type="submit" value="Оставить заявку" class="btn-request">
-                                                        <label class="check">
-                                                            <input type="checkbox" class="check__input" checked>
-                                                            <span class="check__box"></span>
-                                                            Отправляя форму, я даю согласие на обработку <a href="#">персональных данных</a>
-                                                        </label>
-                                    
-                                                    </div>
-                                                </form>
-                                    
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <a href="#" class="btn-request"  data-toggle="modal" data-target="#catalog__showerscreen-btn">Заявка на разчет</a>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="catalog__showerscreen-btn" tabindex="-1" role="dialog"
-                                aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form method="POST" action="send.php">
-                                                <div class="requestform__wrapper">
-                                                    <h2>Заявка на расчет</h2>
-                                                    <p>Укажыте свои контакты и получите ознакомительное КП<br>
-                                                        для понимания стоимости и сроков.</p>
-                                                    <div class="row">
-                                                        <div class="col-xl-6 col-lg-6 col-12">
-                                                            <span class="requestform__wrapper--line">
-                                                                <input type="tel" name="phone" placeholder="Введите Ваш телефон">
-                                                            </span>
-                                                        </div>
-                                                        <div class="col-xl-6 col-lg-6 col-12">
-                                                            <span class="requestform__wrapper--line">
-                                                                <input type="email" name="email" placeholder="Введите ваш E-mail">
-                                                            </span>
-                                
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-xl-12">
-                                                            <span class="requestform__wrapper--line">
-                                                                <input type="text" name="message" placeholder="Введите Ваше сообщение">
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                    <input type="file" name="file" id="file2" class="inputfile">
-                                                    <label for="file2">
-                                                        <img src="img/icons/upload.svg" alt="upload">
-                                                        Загрузить ескиз
-                                                    </label>
-                                                    <input type="submit" value="Оставить заявку" class="btn-request">
-                                                    <label class="check">
-                                                        <input type="checkbox" class="check__input" checked>
-                                                        <span class="check__box"></span>
-                                                        Отправляя форму, я даю согласие на обработку <a href="#">персональных данных</a>
-                                                    </label>
-                                
-                                                </div>
-                                            </form>
-                                
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="catalog__showerscreen--order">
+                              <div class="catalog__showerscreen--description__free--call">
+                                  <img src="img/icons/freeZamershikBut.svg" alt="freeZamershikBut">
+                                  <a href="#!"  data-toggle="modal" data-target="#freecallgager">Бесплатный вызов
+                                      замерщика
+                                  </a>
+                              </div>
+                              <a href="#" class="btn-request "  data-toggle="modal" data-target="#requestpayment">Заявка на расчет</a>
                             </div>
                         </div>
                     </div>
@@ -550,9 +239,11 @@
                         <div class="catalog__showerscreen--swiper">
                             <div class="swiper-container swiper-showerscreen">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><img src="img/door.jpg" alt="door"></div>
-                                    <div class="swiper-slide"><img src="img/door.jpg" alt="door"></div>
-                        
+                                    <div class="swiper-slide"><img src="img/Loft/DSC_0612.JPG" alt="door"></div>
+                                    <div class="swiper-slide"><img src="img/Loft/DSC_0614.JPG" alt="door"></div>
+                                    <div class="swiper-slide"><img src="img/Loft/DSC_0615.JPG" alt="door"></div>
+                                    <div class="swiper-slide"><img src="img/Loft/DSC_0616.JPG" alt="door"></div>
+                                    <div class="swiper-slide"><img src="img/Loft/DSC_0617.JPG" alt="door"></div>
                                 </div>
                                 <div class="swiper-navigation">
                                     <div class="swiper-button-prev">
@@ -579,8 +270,12 @@
                         <div class="catalog__showercurtain--swiper">
                             <div class="swiper-container swiper-showercurtain">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><img src="img/door.jpg" alt="door"></div>
-                                    <div class="swiper-slide"><img src="img/door.jpg" alt="door"></div>
+                                    <div class="swiper-slide"><img src="img/curtain/DSC_0497.JPG" alt="door"></div>
+                                    <div class="swiper-slide"><img src="img/curtain/DSC_0500.JPG" alt="door"></div>
+                                    <div class="swiper-slide"><img src="img/curtain/DSC_0501.JPG" alt="door"></div>
+                                    <div class="swiper-slide"><img src="img/curtain/DSC_0507.JPG" alt="door"></div>
+                                    <div class="swiper-slide"><img src="img/curtain/DSC_0508.JPG" alt="door"></div>
+                                    <div class="swiper-slide"><img src="img/curtain/DSC_0509.JPG" alt="door"></div>
                                 </div>
                                 <div class="swiper-navigation">
                                     <div class="swiper-button-prev">
@@ -634,122 +329,16 @@
                                 <li>- Ручка – кноб – 2 компл.</li>
                                 <li>- Магнитный уплотнитель 180 гр.</li>
                             </ul>
-                            <a href="#" class="btn-request"  data-toggle="modal" data-target="#catalog__curtain-btn">Заявка на разчет</a> 
+                            <a href="#" class="btn-request"  data-toggle="modal" data-target="#requestpayment">Заявка на расчет</a> 
                             
-                            <!-- Modal -->
-                            <div class="modal fade" id="catalog__curtain-btn" tabindex="-1" role="dialog" 
-                                aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form method="POST" action="send.php">
-                                                <div class="requestform__wrapper">
-                                                    <h2>Заявка на расчет</h2>
-                                                    <p>Укажыте свои контакты и получите ознакомительное КП<br>
-                                                        для понимания стоимости и сроков.</p>
-                                                    <div class="row">
-                                                        <div class="col-xl-6 col-lg-6 col-12">
-                                                            <span class="requestform__wrapper--line">
-                                                                <input type="tel" name="phone" placeholder="Введите Ваш телефон">
-                                                            </span>
-                                                        </div>
-                                                        <div class="col-xl-6 col-lg-6 col-12">
-                                                            <span class="requestform__wrapper--line">
-                                                                <input type="email" name="email" placeholder="Введите ваш E-mail">
-                                                            </span>
-                                
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-xl-12">
-                                                            <span class="requestform__wrapper--line">
-                                                                <input type="text" name="message" placeholder="Введите Ваше сообщение">
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                    <input type="file" name="file" id="file3" class="inputfile">
-                                                    <label for="file3">
-                                                        <img src="img/icons/upload.svg" alt="upload">
-                                                        Загрузить ескиз
-                                                    </label>
-                                                    <input type="submit" value="Оставить заявку" class="btn-request">
-                                                    <label class="check">
-                                                        <input type="checkbox" class="check__input" checked>
-                                                        <span class="check__box"></span>
-                                                        Отправляя форму, я даю согласие на обработку <a href="#">персональных данных</a>
-                                                    </label>
-                                
-                                                </div>
-                                            </form>
-                                
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
 
                             <div class="catalog__showerscreen--description__free--call">
                                 <img src="img/icons/freeZamershikBut.svg" alt="freeZamershikBut">
 
-                                <a href="#!" data-toggle="modal" data-target="#catalog__curtain-a"> Бесплатный вызов
+                                <a href="#!" data-toggle="modal" data-target="#freecallgager"> Бесплатный вызов
                                     замерщика</a>
                                 
-                                <!-- Modal -->
-                                <div class="modal fade" id="catalog__curtain-a" tabindex="-1" role="dialog" 
-                                    aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form method="POST" action="send.php">
-                                                    <div class="requestform__wrapper">
-                                                        <h2>Бесплатный вызов
-                                                        замерщика</h2>
-                                                        <p>Укажыте свои контакты и получите ознакомительное КП<br>
-                                                            для понимания стоимости и сроков.</p>
-                                                        <div class="row">
-                                                            <div class="col-xl-6 col-lg-6 col-12">
-                                                                <span class="requestform__wrapper--line">
-                                                                    <input type="tel" name="phone" placeholder="Введите Ваш телефон">
-                                                                </span>
-                                                            </div>
-                                                            <div class="col-xl-6 col-lg-6 col-12">
-                                                                <span class="requestform__wrapper--line">
-                                                                    <input type="email" name="email" placeholder="Введите ваш E-mail">
-                                                                </span>
-                                    
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-xl-12">
-                                                                <span class="requestform__wrapper--line">
-                                                                    <input type="text" name="message" placeholder="Введите Ваше сообщение">
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <input type="submit" value="Оставить заявку" class="btn-request">
-                                                        <label class="check">
-                                                            <input type="checkbox" class="check__input" checked>
-                                                            <span class="check__box"></span>
-                                                            Отправляя форму, я даю согласие на обработку <a href="#">персональных данных</a>
-                                                        </label>
-                                    
-                                                    </div>
-                                                </form>
-                                    
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
                             </div>
                         </div>
@@ -762,9 +351,12 @@
     <section class="german-fittings" id="german-fittings">
         <div class="container">
             <h2>Немецкая фурнитура <br>
-            по цене Китайского производителя
+            по лучшей цене. Такого еще не было.
         </h2>
-        <p>Такого еще не было. Гарантия на изделие<span> до 3-х лет!!!</span></p>
+        <p> Гарантия на изделие<span> до 3-х лет!!!</span></p>
+        <p>+</p>
+        <p><span>ШИРОКИЙ ВЫБОР</span>  ЦВЕТОВЫХ ОТТЕНКОВ СТЕКЛА.</p>
+        <p><span>ИНДИВИДУАЛЬНЫЙ</span>  ДИЗАЙН.</p>
         <div class="row german-fittings__line">
             <div class="col-xl-4 col-lg-4 col-md-4">
                 <div class="german-fittings__icon-block german-fittings__icon-block--left">
@@ -775,7 +367,7 @@
             </div>
             <div class="col-xl-4 col-lg-4 col-md-4">
                 <div class="german-fittings__icon-block german-fittings__icon-block--center">
-                    <img src="img/icons/color-palette1.svg" alt="color-palette">
+                    <img src="img/icons/setting.svg" alt="setting">
                     <p>Фурнитура <span>ЛЮБОГО ЦВЕТА <br>
                             и ФОРМЫ </span>под любой дизайн и стиль</p>
                     
@@ -791,7 +383,7 @@
 
 
         </div>
-        <div class="row">
+<!--         <div class="row">
             <div class="col-xl-12">
                 <div class="german-fittings__wisdom">
                     <p>“Дорого - да мило, дешево - да гнило...”
@@ -799,9 +391,7 @@
                     </p>
                 </div>
             </div>
-        </div>
-        
-
+        </div> -->
         </div>
     </section>
     <section class="work" >
@@ -870,62 +460,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <a href="#" class="btn-request" data-toggle="modal" data-target="#work-btn">Оставить заявку</a>
-
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="work-btn" tabindex="-1" role="dialog" 
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <form method="POST" action="send.php">
-                                        <div class="requestform__wrapper">
-                                            <h2>Заказать звонок</h2>
-                                            <p>Укажыте свои контакты и получите ознакомительное КП<br>
-                                                для понимания стоимости и сроков.</p>
-                                            <div class="row">
-                                                <div class="col-xl-6 col-lg-6 col-12">
-                                                    <span class="requestform__wrapper--line">
-                                                        <input type="tel" name="phone" placeholder="Введите Ваш телефон">
-                                                    </span>
-                                                </div>
-                                                <div class="col-xl-6 col-lg-6 col-12">
-                                                    <span class="requestform__wrapper--line">
-                                                        <input type="email" name="email" placeholder="Введите ваш E-mail">
-                                                    </span>
-                    
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xl-12">
-                                                    <span class="requestform__wrapper--line">
-                                                        <input type="text" name="descr" placeholder="Введите Ваше сообщение">
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <input type="submit" value="Оставить заявку" class="btn-request">
-                                            <label class="check">
-                                                <input type="checkbox" class="check__input" checked>
-                                                <span class="check__box"></span>
-                                                Отправляя форму, я даю согласие на обработку <a href="#">персональных данных</a>
-                                            </label>
-                    
-                                        </div>
-                                    </form>
-                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
+                    <a href="#" class="btn-request" data-toggle="modal" data-target="#callback">Оставить заявку</a>
                 </div>
             </div>
         </div>
@@ -934,7 +469,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-9 offset-lg-3">
-                    <form method="POST" action="send.php" enctype="multipart/form-data">
+                    <form method="POST" class="requestpaymentform" action="send.php" enctype="multipart/form-data">
                         <div class="requestform__wrapper">
                             <h2>Заявка на расчет</h2>
                             <p>Укажыте свои контакты и получите ознакомительное КП<br>
@@ -942,12 +477,12 @@
                                 <div class="row">
                                     <div class="col-xl-6 col-lg-12">
                                         <span class="requestform__wrapper--line">
-                                            <input type="tel" name="phone" placeholder="Введите Ваш телефон">
+                                            <input type="tel" name="phone" minlength="7"  placeholder="Введите Ваш телефон" required>
                                         </span>
                                     </div>
                                     <div class="col-xl-6 col-lg-12">
                                         <span class="requestform__wrapper--line">
-                                            <input type="email" name="email" placeholder="Введите ваш E-mail">
+                                            <input type="email" name="email" minlength="3" placeholder="Введите ваш E-mail" required>
                                         </span>
                                         
                                     </div>
@@ -955,18 +490,21 @@
                             <div class="row">
                                 <div class="col-xl-12">
                                     <span class="requestform__wrapper--line">
-                                        <input type="text" name="descr" placeholder="Введите Ваше сообщение">
+                                        <input type="text" name="descr" minlength="3" placeholder="Введите Ваше сообщение" required>
                                     </span>
+
                                 </div>
                             </div>
-                            <input type="file"  name="file" id="file4" class="inputfile" >
-                            <label for="file4">
+
+                            <input type="file" name="file" id="file" class="inputfile" >
+                            <label for="file">
                                 <img src="img/icons/upload.svg" alt="upload"> 
-                                Загрузить ескиз
+                                <span>Загрузить ескиз</span>
                             </label>
-                                <input type="submit" value="Оставить заявку" class="btn-request">
+
+                            <input type="submit" name="sendMail"  value="Оставить заявку" class="btn-request">
                             <label  class="check">
-                                <input type="checkbox" class="check__input" checked>
+                                <input type="checkbox" name="check" class="check__input">
                                 <span class="check__box"></span>
                                 Отправляя форму, я даю согласие на <a href="#"> обработку персональных данных</a>
                             </label>
@@ -984,18 +522,39 @@
                     <h2>Наши работы</h2>
                 </div>
                 <div class="col-xl-3">
-                    <a href="#">Смотреть все работы</a>
+                    <a href="https://www.instagram.com/twistglass/">Смотреть все работы</a>
                 </div>
             </div>
             <div class="ourwork__swiper">
                 <div class="swiper-container swiper-ourwork">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img/img1.jpg" alt="img"></div>
-                        <div class="swiper-slide"><img src="img/2.jpg" alt="img"></div>
-                        <div class="swiper-slide"><img src="img/3.jpg" alt="img"></div>
-                        <div class="swiper-slide"><img src="img/4.jpg" alt="img"></div>
-                        <div class="swiper-slide"><img src="img/4.jpg" alt="img"></div>
-                        <div class="swiper-slide"><img src="img/4.jpg" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0301.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0307.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0436.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0442.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0447.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0451.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0454.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0484.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0485.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0486.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0488.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0499.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0504.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0506.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0562.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0566.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0568.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0571.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0578.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0579.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0594.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0634.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/DSC_0636.JPG" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/IMG-20190403-WA0048.jpg" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/IMG-20190403-WA0054.jpg" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/IMG-20190408-WA0001.jpg" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/examples/IMG-20190408-WA0002.jpg" alt="img"></div>
                     </div>
                     <div class="swiper-navigation">
                         <div class="swiper-button-prev">
@@ -1010,7 +569,7 @@
         </div>
 
     </section>
-    <section class="reviews" id="#reviews">
+    <section class="reviews" id="reviews">
         <div class="container">
             <div class="row">
                 <div class="col-xl-7 col-lg-7 col-md-7">
@@ -1118,7 +677,7 @@
                 <div class="footer__wrapper--feed">
                     <span>Следуйте за нами <br>
                         в Instagram:</span>
-                    <a href="#!">
+                    <a href="https://www.instagram.com/twistglass/">
                         <img src="img/icons/instagram.svg" alt="instagram">
                     </a>
                 
@@ -1127,127 +686,188 @@
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                 <div class="footer__wrapper--mobile">
                     <a href="tel:+74954314043">+7 (495) 431 - 40 - 43</a>
-                    <a href="#"  data-toggle="modal" data-target="#menu-mobile-bottom">Заказать звонок</a>
+                    <a href="#"  data-toggle="modal" data-target="#callback">Заказать звонок</a>
                     <a href="#" class="footer-mobile__up" ><img src="img/icons/toparrow.svg" alt="arrow"></a>
 
-                <!-- Modal -->
-                <div class="modal fade" id="home__request" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <form method="POST" action="send.php">
-                                    <div class="requestform__wrapper">
-                                        <h2>Заявка на расчет</h2>
-                                        <p>Укажыте свои контакты и получите ознакомительное КП<br>
-                                            для понимания стоимости и сроков.</p>
-                                        <div class="row">
-                                            <div class="col-xl-6 col-lg-6 col-12">
-                                                <span class="requestform__wrapper--line">
-                                                    <input type="tel" name="phone" placeholder="Введите Ваш телефон">
-                                                </span>
-                                            </div>
-                                            <div class="col-xl-6 col-lg-6 col-12">
-                                                <span class="requestform__wrapper--line">
-                                                    <input type="email" name="email" placeholder="Введите ваш E-mail">
-                                                </span>
-                
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xl-12">
-                                                <span class="requestform__wrapper--line">
-                                                    <input type="text" placeholder="Введите Ваше сообщение">
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <input type="file" name="file" id="file" class="inputfile">
-                                        <label for="file">
-                                            <img src="img/icons/upload.svg" alt="upload">
-                                            Загрузить ескиз
-                                        </label>
-                                        <input type="submit" value="Оставить заявку" class="btn-request">
-                                        <label class="check">
-                                            <input type="checkbox" class="check__input" checked>
-                                            <span class="check__box"></span>
-                                            Отправляя форму, я даю согласие на обработку <a href="#">персональных данных</a>
-                                        </label>
-                
-                                    </div>
-                                </form>
-                
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="menu-mobile-bottom" tabindex="-1" role="dialog" 
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form method="POST" action="send.php">
-                    <div class="requestform__wrapper">
-                        <h2>Заказать звонок</h2>
-                        <p>Укажыте свои контакты и получите ознакомительное КП<br>
-                            для понимания стоимости и сроков.</p>
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-12">
-                                <span class="requestform__wrapper--line">
-                                    <input type="tel" name="phone" placeholder="Введите Ваш телефон">
-                                </span>
-                            </div>
-                            <div class="col-xl-6 col-lg-6 col-12">
-                                <span class="requestform__wrapper--line">
-                                    <input type="email" name="email" placeholder="Введите ваш E-mail">
-                                </span>
-
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <span class="requestform__wrapper--line">
-                                    <input type="text" placeholder="Введите Ваше сообщение">
-                                </span>
-                            </div>
-                        </div>
-                        <input type="submit" value="Оставить заявку" class="btn-request">
-                        <label class="check">
-                            <input type="checkbox" class="check__input" checked>
-                            <span class="check__box"></span>
-                            Отправляя форму, я даю согласие на обработку <a href="#">персональных данных</a>
-                        </label>
-
-                    </div>
-                </form>
-
-                </div>
-            </div>
-            </div>
-            </div>
-
-
-   
-       
     </div>
 </footer>
+
+
+    <!-- Modal -->
+      <div class="modal fade modal-hide" id="callback" tabindex="-1" role="dialog"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <form method="POST" class="callback" action="send.php">
+                          <div class="requestform__wrapper">
+                              <h2>Бесплатный вызов</h2>
+                              <p>Укажыте свои контакты и получите ознакомительное КП<br>
+                                  для понимания стоимости и сроков.</p>
+                              <div class="row">
+                                  <div class="col-xl-6 col-lg-6 col-12">
+                                      <span class="requestform__wrapper--line">
+                                          <input type="tel" name="phone" placeholder="Введите Ваш телефон">
+                                      </span>
+                                  </div>
+                                  <div class="col-xl-6 col-lg-6 col-12">
+                                      <span class="requestform__wrapper--line">
+                                          <input type="email" name="email" placeholder="Введите ваш E-mail">
+                                      </span>
+          
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-xl-12">
+                                      <span class="requestform__wrapper--line">
+                                          <input type="text" name="descr" placeholder="Введите Ваше сообщение">
+                                      </span>
+                                  </div>
+                              </div>
+                              <input type="submit" name="sendMail" value="Оставить заявку" class="btn-request">
+                              <label class="check">
+                                  <input type="checkbox" name="check" class="check__input">
+                                  <span class="check__box"></span>
+                                  Отправляя форму, я даю согласие на обработку <a href="#">персональных данных</a>
+                              </label>
+          
+                          </div>
+                      </form>
+          
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal -->
+    <div class="modal fade modal-hide" id="requestpayment" tabindex="-1" role="dialog"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" class="requestpayment" action="send.php" enctype="multipart/form-data">
+                        <div class="requestform__wrapper">
+                            <h2>Заявка на расчет</h2>
+                            <p>Укажыте свои контакты и получите ознакомительное КП<br>
+                                для понимания стоимости и сроков.</p> 
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-12">
+                                        <span class="requestform__wrapper--line">
+                                            <input type="tel" name="phone" minlength="7" placeholder="Введите Ваш телефон" required>
+                                        </span>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-12">
+                                        <span class="requestform__wrapper--line">
+                                            <input type="email" name="email" minlength="3" placeholder="Введите ваш E-mail" required>
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <span class="requestform__wrapper--line">
+                                        <input type="text" name="descr" minlength="3" placeholder="Введите Ваше сообщение" required>
+                                    </span>
+                                </div>
+                            </div>
+                            <input type="file" name="file" id="file2" class="inputfile">
+                            <label for="file2">
+                                <img src="img/icons/upload.svg" alt="upload"> 
+                                <span>Загрузить ескиз</span>
+                            </label>
+                                <input type="submit" name="sendMail" value="Оставить заявку" class="btn-request">
+                            <label  class="check">
+                                <input type="checkbox" name="check" class="check__input">
+                                <span class="check__box"></span>
+                                Отправляя форму, я даю согласие на <a href="#"> обработку персональных данных</a>
+                            </label>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+        <div class="modal fade modal-hide" id="freecallgager" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="POST" class="freecallgager" action="send.php" enctype="multipart/form-data">
+                            <div class="requestform__wrapper">
+                                <h2>Бесплатный вызов замерщика</h2>
+                                <p>Укажыте свои контакты и получите ознакомительное КП<br>
+                                    для понимания стоимости и сроков.</p>
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-sm-12 col-12">
+                                        <span class="requestform__wrapper--line">
+                                            <input type="tel" name="phone" placeholder="Введите Ваш телефон">
+                                        </span>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-sm-12 col-12">
+                                        <span class="requestform__wrapper--line">
+                                            <input type="email" name="email" placeholder="Введите ваш E-mail">
+                                        </span>
+        
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <span class="requestform__wrapper--line">
+                                            <input type="text" name="descr" placeholder="Введите Ваше сообщение">
+                                        </span>
+                                    </div>
+                                </div>
+                                <input type="submit" value="Оставить заявку" name="sendMail" class="btn-request">
+                                <label class="check">
+                                    <input type="checkbox" name="check" class="check__input">
+                                    <span class="check__box"></span>
+                                    Отправляя форму, я даю согласие на обработку <a href="#">персональных данных</a>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Modal -->
+    <div class="modal fade" id="thanksModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h3>СПАСИБО ЗА ЗАКАЗ</h3> 
+            <p>Скоро мы Вам перезвоним!</p>
+          </div>
+        </div>
+      </div>
+    </div>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
+<script src="js/imask.js"> </script>
 <script src="js/main.js"></script>
 </body>
 </html>
