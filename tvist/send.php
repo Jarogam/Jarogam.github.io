@@ -1,6 +1,6 @@
 <?php
 
-$to = 'Elena357910@yandex.com';
+$to = 'bonackiy.dev@gmail.com';
 
 if ( isset( $_POST['sendMail'] ) ) {
   $email   = ( $_POST['email'], 0, 64 );
