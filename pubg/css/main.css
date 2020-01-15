@@ -40,8 +40,8 @@ img{
 text-decoration: none;
 display: inline-block;
 color: #fff;
-padding: 15px 70px;
-text-decoration: none;
+padding: 15px 90px;
+text-decoration: none; 
 font-family: "SF UI Display";
 font-size: 18px;
 font-weight: 700;
@@ -54,21 +54,34 @@ background-image: linear-gradient(183deg, #1adb74 0%, #019948 100%);
 /* // classes for burger */
 .sidebar-mini .main_left-section{
   width: 60px;
-  /* overflow-y: scroll;
-  scroll-behavior: smooth;
-  height: 100%; */
+  min-width: unset;
 }
-.sidebar-mini .logo{
+.sidebar-mini .main_left-section_logo{
   display: none;
 }
 .sidebar-mini .main_left-section_menu{
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.sidebar-mini .main_left-section_menu li{
+  padding: 0px;
+}
 .sidebar-mini .main_left-section_social{
-  margin-top: 200px;
+
+}
+.sidebar-mini .main_left-section_menu li a{
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  margin-left: calc(50% - 22px);
+}
+.sidebar-mini .main_left-section_menu li:nth-child(8) a{
+  padding: 5px 15px;
+  margin: calc(50% - 27px);
+}
+.sidebar-mini .main_left-section_social{
+  margin-top: 50px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -83,7 +96,7 @@ background-image: linear-gradient(183deg, #1adb74 0%, #019948 100%);
 
 .sidebar-mini .main_right-section{
   margin-left: 60px;
-  width: 96.87%;
+  width: 95.87%;
 }
 .sidebar-mini .main_left-section_menu li span{
   display: none;
@@ -155,12 +168,12 @@ background-image: linear-gradient(183deg, #1adb74 0%, #019948 100%);
   
   #menuToggle input:checked ~ #span1 {
     background-color: #fff;
-    transform: rotate(50deg) translate(5px)
+    transform: rotate(45deg) translate(4px)
   }
   #menuToggle input:checked ~ #span2 {
     background-color: #fff;
     width: 30px;
-    transform: rotate(485deg) translate(5px);
+    transform: rotate(495deg) translate(5px)
   }
   #menuToggle input:checked ~ #span3 {
     background-color: #fff;
@@ -175,7 +188,7 @@ background-image: linear-gradient(183deg, #1adb74 0%, #019948 100%);
 .header_loginform-login{
     border: 1px solid #868fa5;
     border-radius: 5px;
-    padding: 15px 30px;
+    padding: 10px 20px;
     text-decoration: none;
     color: #868fa5;
     font-family: "SF UI Display";
@@ -185,12 +198,13 @@ background-image: linear-gradient(183deg, #1adb74 0%, #019948 100%);
 .header_loginform-register{
     background: #0DA956;
     border-radius: 5px;
-    padding: 15px 40px;
+    padding: 10px 25px;
     color: #fff;
     text-decoration: none;
     font-family: "SF UI Display";
     font-size: 18px;
     font-weight: 400;
+    margin-left: 15px;
 }
 .main{
     display: flex;
@@ -203,35 +217,53 @@ background-image: linear-gradient(183deg, #1adb74 0%, #019948 100%);
     color: #ffffff;
     text-decoration: none;
     font-family: "SF UI Display";
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     text-decoration: none;
 }
 .logo span{
 opacity: 0.5;
   font-family: "SF UI Display";
-font-size: 14px;
-letter-spacing: 6px;
+font-size: 13px;
+letter-spacing: 5px;
 color: #ffffff;
+}
+
+.main_left-section::-webkit-scrollbar {
+  width: 0.5em;
+  opacity: 0;
+  
+}
+
+.main_left-section::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.main_left-section:hover::-webkit-scrollbar-thumb {
+  background-color: rgb(153, 151, 151);
+  outline: 1px solid slategrey;
+  overflow: hidden;
+  border-radius: 5px;
 }
 .main_left-section{
   overflow-y: scroll;
   scroll-behavior: smooth;
+  transition: all 0.5s ease-out;
   height: 100%;
-  width: 19%;
+  width: 15%;
+  min-width: 170px;
   background: #1f1c1c;
   z-index: 9999;
   margin-top: 85px;
   position: fixed;
 }
+
 .main_left-section ul li{
-padding: 10px 5px 10px 25px;
+padding: 10px 5px 10px 20px;
 }
 .icon{
   display: inline-block;
   background-repeat: no-repeat;
-  padding-left: 20px;
-  width: 15px;
+  width: 30px;
   height: 22px;
 }
 .icon-active-profile{
@@ -269,14 +301,13 @@ background-image: url(../img/icons/play.svg);
 .main_left-section_menu li:nth-child(8){
   background-color: #0da956;
   margin-top: 40px;
-  width: 100%;
 }
 .main_left-section_menu li a{
 display: flex;
 color: #fff;
 text-decoration: none;
 font-family: "SF UI Display";
-font-size: 18px;
+font-size: 16px;
 font-weight: 600;
 }
 .main_left-section_menu li:first-child{
@@ -285,11 +316,11 @@ font-weight: 600;
 }
 .main_left-section_menu li span{
   display: inline-block;
-  padding-left: 15px;
+  padding-left: 20px;
 }
 
 .main_left-section_social{
-  margin-top: 200px;
+  margin-top: 50px;
   height: 100%;
 }
 .main_left-section_social li:nth-child(1) a{
@@ -334,9 +365,9 @@ display: inline-block;
 
 /* right section */
 .main_right-section{
-  width: 82%;
+  width: 85%;
   background: #272a32;
-  margin-left: 18%;
+  margin-left: 15%;
   margin-top: 85px;
 }
 .main_right-section_mainblock{
@@ -428,6 +459,7 @@ h1 span{
   font-family: "SF UI Display";
   font-size: 18px;
   font-weight: 400;
+  margin-bottom: 30px;
 }
 .main_right-section_mainblock-buttons{
   margin-top: 60px;
@@ -463,9 +495,9 @@ line-height: 50px;
   border-radius: 10px;
   background-color: #1f1c1c;
   padding: 10px;
+  /* max-width: 550px; */
 }
 .swiper-slide-tournaments_item{
-  padding-left: 15px;
     padding-bottom: 10px;
 }
 .swiper-slide-tournaments_item img{
@@ -481,7 +513,7 @@ font-weight: 700;
   opacity: 0.4;
 color: #ffffff;
 font-family: "SF UI Display";
-font-size: 18px;
+font-size: 14px;
 font-weight: 400;
 }
 .swiper-slide-tournaments_item-line{
@@ -534,7 +566,7 @@ display: inline-block;
   transform: rotate(180deg);
 }
 .swiper-slide-tournaments_item-buttons_reg{
-  padding: 10px 70px;
+  padding: 10px 60px;
   display: inline-block;
   color: #0DA956;
   border: 1px solid #1adb74;
@@ -549,7 +581,7 @@ font-family: "SF UI Display";
 font-size: 18px;
 font-weight: 400;
 text-decoration: underline;
-margin-left: 25px;
+margin-left: 35px;
 }
 .main_right-section_award{
 background-color: #272a32;
@@ -636,7 +668,7 @@ background-color: #272a32;
 .swiper-slide_award-item a:last-child{
   text-align: center;
   padding: 8px 40px;
-  margin-left: calc(50% - 172px);
+  margin-left: calc(50% - 190px);
   text-decoration: none;
   color: #ffffff;
   font-family: "SF UI Display";
@@ -666,8 +698,7 @@ line-height: 50px;
 }
 .main_right-section_bonuses-item img{
   margin-bottom: 35px;
-  max-width: 300px;
-  margin-left: calc(50% - 150px);
+  margin-left: auto;
 }
 .main_right-section_bonuses-item_block span{
   color: #ffffff;
@@ -756,6 +787,7 @@ margin-right: 0;
   font-family: "SF UI Display";
   font-size: 28px;
   font-weight: 700;
+  margin-bottom: 15px;
 }
 .footer-form p{
   opacity: 0.5;
@@ -764,6 +796,7 @@ margin-right: 0;
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
+  margin-top: 0px;
 }
 .footer-top{
   display: flex;
@@ -775,6 +808,8 @@ margin-right: 0;
 .footer-form input{
   width: 43%;
   background-color: rgba(47, 53, 59, 0.9);
+  font-family: "SF UI Display";
+  font-size: 18px;
   color: #fff;
   opacity: 0.5;
   padding: 15px;
@@ -831,18 +866,20 @@ font-size: 16px;
 font-weight: 400;
 }
 
-
+hr, .footer-bottom_text p{
+  margin-right: 30px;
+}
 /* MEDIA requests */
 @media screen and (max-width: 1547px){
   .footer-form input{
-    width: 43%;
+    width: 42%;
     margin-right: 15px;
   }
 }
 @media screen and (max-width: 1468px){
   .footer-form input{
     width: 42%;
-    margin-right: 20px;
+    margin-right: 15px;
   }
   .swiper-slide_award-item_text{
     width: 50%;
@@ -868,11 +905,26 @@ font-weight: 400;
   .swiper-slide_award-item_text{
     margin-left: 25px;
   }
-  .swiper-slide_award-item a:last-child{
+  /* .swiper-slide_award-item a:last-child{
     margin-left: 0;
-  }
+  } */
   .footer-video_play {
     right: calc(50% - 82px);
+  }
+}
+@media screen and (max-width: 1330px){
+  .swiper-slide-tournaments_item-buttons_reg{
+    display: block;
+    text-align: center;
+  }
+  .swiper-slide-tournaments_item-buttons a:last-child{
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+  }
+  .swiper-slide-tournaments_item-buttons a:last-child{
+    margin: 0px;
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 1200px){
@@ -901,23 +953,39 @@ font-weight: 400;
   }
   .footer-top{
     margin-bottom: 50px;
+    padding: 0px 15px;
   }
 }
 @media screen and (max-width: 998px){
 h1{
   font-size: 30px;
+  line-height: 2rem;
 }
+
 .main_right-section_bonuses-item_block-coins{
   float: none;
   padding-top: 5px;
   display: block;
 }
+
 .main_right-section_bonuses-item_block-buy{
   padding: 15px 0px;
 }
 .main_right-section_bonuses-item_block span{
-  display: block;
+  display: inline-block;
   text-align: center;
+}
+.main_right-section .main_right-section_bonuses-item_block-coins_count{
+  margin-left: calc(50% - 65px);
+}
+.main_right-section .main_right-section_bonuses-item_block-title{
+  display: block;
+}
+.footer-bottom_text p{
+  padding-right: 30px;
+}
+.main_left-section_menu li span{
+  font-size: 13px;
 }
 .logo a{
   font-size: 17px;
@@ -945,24 +1013,67 @@ h1{
   background-size: cover;
 }
 }
-@media screen and (max-width: 886px){
 
-}
 @media screen and (max-width: 768px){
+  .main_right-section{
+    position: relative;
+  }
+  body.sidebar-mini .main_right-section::before{
+    content: "";
+    opacity: 0.9;
+    background-color: #1F1C1C;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  h2{
+    margin: 0 10px;
+  }
+  .swiper-tournaments .swiper-slide{
+    padding: 0px;
+  }
+  .swiper-slide-tournaments_item{
+    padding: 10px;
+  }
   .main_right-section_mainblock{
-    padding: 50px 35px;
+    padding: 20px 35px;
+  }
+  .swiper-slide-tournaments_item-buttons a:last-child{
+    display: none;
+  }
+  .main_left-section .main_left-section_social li{
+    padding-left: 10px;
   }
   .main_right-section_mainblock-buttons a:last-child{
     margin-left: 0px;
     margin-top: 15px;
   }
-
+  .sidebar-mini .main_left-section_menu li a{
+    margin-left: 0px;
+    display: inline-block;
+  }
+  .sidebar-mini .main_left-section_menu li:nth-child(8){
+    margin-top: 15px;
+  }
+  .sidebar-mini .main_left-section_social{
+    margin-top: 20px;
+  }
+  .sidebar-mini .main_left-section_menu li a{
+    display: flex;
+    width: 100%;
+    padding: 10px 15px;
+    margin-left: 0px;
+    line-height: 1.2rem;
+  }
+  .sidebar-mini .main_left-section_menu li:nth-child(8) a{
+    margin: 0px;
+  }
   .main_right-section_mainblock{
     background: none;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
   }
   .main_left-section{
-    left: -170px;
+    left: -225px;
   }
   .footer-form{
     padding: 0px;
@@ -978,7 +1089,9 @@ h1{
   .sidebar-mini .main_left-section{
     left: 0px;
     width: 30%;
+    min-width: 225px;
   }
+
   .sidebar-mini .logo, .sidebar-mini .main_left-section_menu li span,
   .sidebar-mini .main_left-section_menu,.sidebar-mini .main_left-section_social
   {
@@ -991,7 +1104,10 @@ h1{
     display: inline-block;
   }
   .main_right-section-award, .main_right-section_slider, .main_right-section-bonuses, .footer{
-    padding: 50px 35px;
+    padding: 10px 10px;
+  }
+  .footer{
+    padding-bottom: 0px;
   }
   .footer-top, .footer-bottom{
     display: block;
@@ -1001,8 +1117,11 @@ h1{
   }
   .main_right-section-award_swiper-navigation{
     left: calc(50%);
+    bottom: -15px;
   }
-
+  .main_right-section-bonuses{
+    padding-top: 50px;
+  }
   .footer-bottom_logo{
     display: inline-block;
     vertical-align: top;
@@ -1029,6 +1148,13 @@ h1{
   h1{
     font-size: 26px;
   }
+
+  .main_right-section-award h2{
+    padding: 0px;
+  }
+  .main_right-section_mainblock{
+    padding-top: 20px;
+  }
   .main_right-section_mainblock p{
     font-size: 14px;
   }
@@ -1037,7 +1163,9 @@ h1{
   }
   .footer-bottom_text{
     display: none;
+
   }
+  
   .footer #menuToggle{
     display: inline-block;
     float: right;
@@ -1075,7 +1203,8 @@ h1{
   }
   .footer-bottom{
     display: inline-block;
-    
+    padding-top: 25px;
+    padding-bottom: 37px;
   }
   .swiper-slide_award-item{
     position: relative;
@@ -1091,6 +1220,7 @@ h1{
     display: block;
     text-align: center;
     padding: 15px;
+    margin-left: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
@@ -1102,6 +1232,15 @@ h1{
   .swiper-slide_award-item_text-conditions{
     margin-bottom: 60px;
   }
+  .footer-form input{
+    width: 100%;
+    max-width: 400px;
+    margin: 15px 0px;
+  }
+  .main_right-section_bonuses-item_block-more{
+    margin: 0 auto;
+    padding: 0;
+  }
   .main_right-section_mainblock{
     margin-bottom: 50px;
   }
@@ -1111,4 +1250,39 @@ h1{
   .main_right-section_mainblock-counter_item{
     margin-left: 20px;
   }
+  .main_right-section-award, .main_right-section_slider, .main_right-section-bonuses, .footer {
+    padding: 20px 15px;
+  }
+  /* .main_right-section_bonuses-item_block{
+    padding-bottom: 0px;
+  } */
+  .swiper-slide-tournaments_item-buttons_reg{
+    text-align: center;
+    padding: 10px 85px;
+  }
+  .swiper-slide-tournaments_item-buttons a:last-child{
+    padding: 0;
+    text-align: center;
+    display: none;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 400px){
+  .header_loginform-register{
+    padding: 5px;
+    margin-left: 5px;
+  }
+  .header_loginform-login{
+    padding: 5px;
+  }
+  .main_right-section_mainblock-counter_item{
+    margin-left: 10px;
+  }
+  .main_right-section_mainblock-counter_item span:first-child{
+    font-size: 12px;
+  }
+  .main_right-section_mainblock{
+    margin-bottom: 125px;
+  }
+  
 }
