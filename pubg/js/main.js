@@ -29,9 +29,6 @@ function miniburger() {
     var element = document.querySelector("body");
     // element.classList.add("sidebar-mini");
     element.classList.toggle("sidebar-mini");
-    if(a){
-
-    }
   }
 
 
@@ -110,7 +107,7 @@ var swiper = new Swiper('.swiper-award', {
         },
         1200: {
           slidesPerView: 1,
-          spaceBetween: 20
+          spaceBetween: 40
         },
         // 1400: {
         //   slidesPerView: 1,

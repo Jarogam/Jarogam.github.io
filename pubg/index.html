@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    
     <header class="header">
+        <div class="main_left-section_logo logo">
+            <a href="PUBGFIGHT.RU">PUBGFIGHT.RU</a>
+            <span>BEST BATTLE</span>
+        </div>
         <div class="header_burger" id="menuToggle" onclick="miniburger()">
             <input type="checkbox" />
             <span id="span1"></span>
@@ -42,15 +47,23 @@
                 <li><a href=""><i class="icon icon-contacts"></i><span>Контакты</span> </a></li>
                 <li><a href="#"><i class="icon icon-start"></i><span>Начать играть</span> </a></li>
             </ul>
+
             <ul class="main_left-section_social">
                 <li><a href="#"><span>Vkontakte</span></a></li>
                 <li><a href="#"><span>Instagram</span></a></li>
             </ul>
+            <div class="main_left-section_support">
+                <a href="#" class="main_left-section_support-link">Тех. поддержка</a>
+            </div>
+            <div class="header_loginform">
+                <a href="#" class="header_loginform-login">Вход</a>
+                <a href="#" class="header_loginform-register">Регистрация</a>
+            </div>
         </div>
         <div class="main_right-section">
             <section class="main_right-section_mainblock">
                 <img src="img/Icon.svg" alt="">
-                <h1>Не пропустите! <br><span class="main_right-section_mainblock-green-words">Скоро</span> <span class="main_right-section_mainblock-underline">новый Турнир <span class="main_right-section_mainblock-green-words">55 руб</span></span> за килл</h1>
+                <h1>Не пропустите! <br class="main_right-section_mainblock-br"></span><span class="main_right-section_mainblock-green-words">Скоро</span> <span class="main_right-section_mainblock-underline">новый Турнир <span class="main_right-section_mainblock-green-words">55 руб</span> за килл</h1>
                 <p>Режим: Дуо Карта: Эрангель Лицо: от третьего</p>
                 <div class="main_right-section_mainblock-counter">
                     <div class="main_right-section_mainblock-counter_item">
@@ -282,7 +295,7 @@
                         </div>
                         <div class="main_right-section_bonuses-item_block">
                             <img src="img/premium.png" alt="premium">
-                            <span class="main_right-section_bonuses-item_block-title">Premium account</span class="main_right-section_bonuses-item_block-title">
+                            <span class="main_right-section_bonuses-item_block-title">Premium account</span>
                             <div class="main_right-section_bonuses-item_block-coins">
                                 <span class="main_right-section_bonuses-item_block-coins_count">19 990</span>
                                 <span>/ coins</span>
@@ -336,10 +349,18 @@
                     <form class="footer-form">
                         <h2>Специальное предложение</h2>
                         <p>ДЛЯ YOUTUBE И INSTAGRAM БЛОГГЕРОВ ОТ 15000 ПОДПИСЧИКОВ</p>
-                        <input type="text" placeholder="Ваше имя">
-                        <input type="mail" placeholder="Ваша почта">
-                        <input type="text" placeholder="Другие контакты">
-                        <input type="text" placeholder="Медиаресурс">
+                        <div class="footer-form_input">
+                            <input type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="footer-form_input">
+                            <input type="mail" placeholder="Ваша почта">
+                        </div>
+                        <div class="footer-form_input footer-form_input-secondContacts">
+                            <input type="text" placeholder="Другие контакты">
+                        </div>
+                        <div class="footer-form_input">
+                            <input type="text" placeholder="Медиаресурс">
+                        </div>
                         <a href="#">Отправить заявку</a>
                     </form>
                     <div class="footer-video">
