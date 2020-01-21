@@ -1,6 +1,7 @@
 
 $( ".open-menu" ).click(function() {
   $( this ).toggleClass( "active-menu");
+  $("body").toggleClass("mini-menu")
   $(".left-menu").toggleClass("open_left-menu")
 });
 
