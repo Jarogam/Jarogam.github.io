@@ -9,7 +9,7 @@ input, textarea{
     background:#000;
     height: 100%;
     z-index: 10;
-    width: 65px;
+    width: 60px;
     transition: all .3s cubic-bezier(.08,.81,.87,.71);
 }
 .open-menu{
@@ -19,7 +19,7 @@ input, textarea{
     transform: rotate(360deg);
 }
 .open_left-menu{
-    width: 210px;
+    width: 180px;
     transition: all .3s cubic-bezier(.08,.81,.87,.71);
 }
 /* #hidesection{
@@ -61,7 +61,7 @@ input, textarea{
     margin-top: 0px;
 }
 .left-menu ul li a img{
-   width: 30px; 
+   width: 20px; 
 }
 .left-menu ul li:nth-child(2){
     background:red;
@@ -87,6 +87,7 @@ input, textarea{
 .right-content h2:after{
     content:"";
     margin-top:5px;
+    position: absolute;
     width:100%;
     height:2px;
     background-color:red;
@@ -105,7 +106,7 @@ input, textarea{
 .right-content_form-hours{
     border:1px solid red;
     padding:15px;
-    margin-top:5px;
+    margin-top:30px;
     margin-bottom:10px;
     position:relative;
 }
@@ -137,6 +138,9 @@ input, textarea{
 }
 .right-content_form-atmosph_add{
     font-weight:800;
+}
+.right-content_form-payment{
+    margin: 20px 0;
 }
 .right-content_form-payment span{
     display:inline-block
@@ -180,6 +184,8 @@ input, textarea{
 }
 .right-content form textarea{
     border:2px solid red;
+    width: 100%;
+    max-width: 935px;
 }
 .right-content_form-payment_submit{
     display:inline-block;
@@ -190,6 +196,7 @@ input, textarea{
     padding:5px 10px;
     text-align:center
 }
+
 @media (min-width:575.98px){
     .container{
         max-width:540px;
@@ -250,11 +257,31 @@ footer{
     background-color: red;
     color: #fff;
 }
-
-
-/* Login page */
+@media(max-width: 437px){
+    .right-content ul li span{
+        display: block;
+    }
+    .right-content_form-hours_days{
+        display: flex;
+        margin-left: 0px;
+    }
+    .right-content_form-hours input[type="time"]{
+        padding: 5px 10px;
+    }
+}
+@media(max-width: 360px){
+    .right-content_form-hours input[type="time"]{
+        display: block;
+    }
+}
+/* __________________________________________________________________ */
+/* ______________________  Login page ______________________*/
+/* __________________________________________________________________ */
 .login-form{
-    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: -webkit-fill-available;
 }
 .login-form_logo{
     text-align: center;
@@ -275,6 +302,7 @@ footer{
     margin: auto;
     margin-bottom: 15px;
     border: 2px solid red;
+    color: red;
     padding: 10px 100px;
 }
 .login-form form input::placeholder{
@@ -318,7 +346,14 @@ footer{
     }
 }
 
-/* Page review */
+
+
+/* __________________________________________________________________ */
+/* ______________________  Page review ______________________*/
+/* __________________________________________________________________ */
+
+
+
 .right-content_tooltip{
     display: inline-block;
     width: 45%;
