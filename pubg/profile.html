@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="left-section_logo logo">
+            <a href="PUBGFIGHT.RU">PUBGFIGHT.RU</a>
+            <span>BEST BATTLE</span>
+        </div>
+        <div class="header_burger" id="menuToggle" onclick="miniburger()">
+            <input type="checkbox" />
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+        </div>
+        <div class="header_profile">
+            <div class="header_profile-item">
+                <a href="#" class="header_profile-item_icon">
+                    <img src="img/icon.png" alt="icon">
+                </a>
+                <div class="header_profile-item_details">
+                    <a href="#" class="header_profile-item_mail">
+                        Profilegg@gmail.com
+                    </a>
+                    <a href="#" class="header_profile-item_balance profile-item_balance">
+                        <span>
+                            Баланс: 
+                        </span>
+                        <span class="profile-item_balance-count">
+                            4 991 руб
+                        </span>
+                    </a>
+                </div>
+                <a href="#" class="header_profile-logout">Выйти</a>
+            </div>
+            
+        </div>
+    </header>
+    <main class="main">
+        <div class="left-section">
+            <div class="left-section_logo logo">
+                <a href="PUBGFIGHT.RU">PUBGFIGHT.RU</a>
+                <span>BEST BATTLE</span>
+            </div>
+
+            <ul class="left-section_menu">
+                <li>
+                    <a href="#">
+                        <i class="icon icon-active-profile"></i>
+                        <span>Главная</span> 
+                    </a>
+                </li>
+                <li><a href="#"><i class="icon icon-profile"></i><span>Профиль</span> </a></li>
+                <li><a href="#"><i class="icon icon-call"></i><span>Контакты</span> </a></li>
+                <li><a href="#"><i class="icon icon-message"></i><span>Как играть?</span> </a></li>
+                <li><a href="#"><i class="icon icon-tour"></i><span>Турниры</span> </a></li>
+                <li><a href="#"><i class="icon icon-profile"></i><span>Профиль</span> </a></li>
+                <li><a href="#"><i class="icon icon-contacts"></i><span>Контакты</span> </a></li>
+                <li><a href="#"><i class="icon icon-start"></i><span>Начать играть</span> </a></li>
+            </ul>
+
+            <ul class="left-section_social">
+                <li><a href="#"><span>Vkontakte</span></a></li>
+                <li><a href="#"><span>Instagram</span></a></li>
+            </ul>
+            <div class="left-section_support">
+                <a href="#" class="left-section_support-link">Тех. поддержка</a>
+            </div>
+            <div class="header_profile">
+                <div class="header_profile-item">
+                    <a href="#" class="header_profile-item_icon">
+
+                    </a>
+                    <a href="#" class="header_profile-item_mail">
+
+                    </a>
+                    <a href="#" class="header_profile-item_balance">
+
+                    </a>
+                </div>
+                <a href="#" class="header_profile-logout">Выйти</a>
+            </div>
+        </div>
+        <div class="right-section">
+            <section class="right-section_profile">            
+                <h2 class="right-section_profile-h2">Ваш профиль</h2>
+                <p class="right-section_profile-descr" >Тут вы можете посмотреть свой баланс</p>
+                <div class="right-section_profile-tabs">
+                    <div class="tabs tabs_default">
+                        <ul class="right-section_profile-tabs_links horizontal">
+                            <li class="active">
+                                <a href="#tab-1" class="right-section_profile-tabs_link-item">Основная информация</a>
+                            </li>
+                            <li>
+                                <a href="#tab-2" class="right-section_profile-tabs_link-item">История</a>
+                            </li>
+                            <li>
+                                <a href="#tab-3" class="right-section_profile-tabs_link-item">Настройка профиля</a>
+                            </li>
+                            <li>
+                                <a href="#tab-4" class="right-section_profile-tabs_link-item">Premium подписка</a>
+                            </li>
+                            <li>
+                                <a href="#tab-5" class="right-section_profile-tabs_link-item profile-item_balance">
+                          
+                                        Ваш баланс: 
+                          
+                                    <span class="profile-item_balance-count">
+                                        4 999 руб
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        
+                        <div id="tab-1" class="right-section_profile-tabs_item right-section_profile-tab1_item">
+                            <div class="right-section_profile-tab1_item-img">
+                                <img src="img/Bitmap2.jpg" alt="img">
+                            </div>
+                            <div class="right-section_profile-tab1_item-content">
+                                <div class="right-section_profile-tab1_item-content_header">
+                                    <div class="right-section_profile-tab1_item-content_header_title">
+                                        <h3 class="right-section_profile-tab1_item-content_header_title-name">Ivan Grachevskiy</h3>
+                                        <span class="right-section_profile-tab1_item-content_header_title-status">
+                                            Статус аккаунта:<span> Premium</span>
+                                        </span>
+                                    </div>
+                                    <div class="right-section_profile-tab1_item-content_header_buttons">
+                                        <a href="#" class="right-section_profile-tab1_item-content_header_buttons-upbalance">Пополнить баланс</a>
+                                        <a href="#" class="right-section_profile-tab1_item-content_header_buttons-withdraw">Вывести средства</a>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tab1_item-content_medals">
+                                    <p>Медали:</p>
+                                    <div class="right-section_profile-tab1_item-content_medals-wrap">
+                                        <div class="right-section_profile-tab1_item-content_medals-wrap_item"></div>
+                                        <div class="right-section_profile-tab1_item-content_medals-wrap_item"></div>
+                                        <div class="right-section_profile-tab1_item-content_medals-wrap_item"></div>
+                                        <div class="right-section_profile-tab1_item-content_medals-wrap_item"></div>
+                                        <div class="right-section_profile-tab1_item-content_medals-wrap_item"></div>
+                                        <div class="right-section_profile-tab1_item-content_medals-wrap_item"></div>
+                                        <div class="right-section_profile-tab1_item-content_medals-wrap_item"></div>
+                                        <div class="right-section_profile-tab1_item-content_medals-wrap_item"></div>
+                                        <div class="right-section_profile-tab1_item-content_medals-wrap_item"></div>
+                                        <div class="right-section_profile-tab1_item-content_medals-wrap_item"></div>
+                                        <div class="right-section_profile-tab1_item-content_medals-wrap_item"></div>
+                                        <div class="right-section_profile-tab1_item-content_medals-wrap_item"></div>
+                                        <div class="right-section_profile-tab1_item-content_medals-wrap_item"></div>
+                                        <div class="right-section_profile-tab1_item-content_medals-wrap_item"></div>
+                                        <div class="right-section_profile-tab1_item-content_medals-wrap_item"></div>
+                                        <div class="right-section_profile-tab1_item-content_medals-wrap_item"></div>
+                                        <div class="right-section_profile-tab1_item-content_medals-wrap_item"></div>
+                                        <div class="right-section_profile-tab1_item-content_medals-wrap_item"></div>
+                                        <div class="right-section_profile-tab1_item-content_medals-wrap_item"></div>
+                                        <div class="right-section_profile-tab1_item-content_medals-wrap_item"></div>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tab1_item-content_statistic">
+                                    <p>Статистика:</p>
+                                    <div class="right-section_profile-tab1_item-content_statistic-wrap">
+                                        <div class="right-section_profile-tab1_item-content_statistic-wrap_item">
+                                            <span class="right-section_profile-tab1_item-content_statistic-wrap_item-amount">
+                                                499
+                                            </span>
+                                            <div class="right-section_profile-tab1_item-content_statistic-wrap_item-title">
+                                                Колчество убийств
+                                            </div>
+                                        </div>
+                                        <div class="right-section_profile-tab1_item-content_statistic-wrap_item">
+                                            <span class="right-section_profile-tab1_item-content_statistic-wrap_item-amount">
+                                                3 991 руб
+                                            </span>
+                                            <div class="right-section_profile-tab1_item-content_statistic-wrap_item-title">
+                                                Заработано за месяц
+                                            </div>
+                                        </div>
+                                        <div class="right-section_profile-tab1_item-content_statistic-wrap_item">
+                                            <span class="right-section_profile-tab1_item-content_statistic-wrap_item-amount">
+                                                334 991 руб
+                                            </span>
+                                            <div class="right-section_profile-tab1_item-content_statistic-wrap_item-title">
+                                                Заработано всего
+                                            </div>
+                                        </div>
+                                        <div class="right-section_profile-tab1_item-content_statistic-wrap_item">
+                                            <span class="right-section_profile-tab1_item-content_statistic-wrap_item-amount">
+                                                4
+                                            </span>
+                                            <div class="right-section_profile-tab1_item-content_statistic-wrap_item-title">
+                                                Побед
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tab1_item-content_bonuscount">
+                                    <p>Бонусный счет: <span>100 000 coins</span></p>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div id="tab-2" class="right-section_profile-tabs_item">
+                            <h3 class="right-section_tabs-h3">История</h3>
+                            <div class="right-section_profile-tabs_table">
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-section_profile-tabs_table">
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item right-section_profile-tabs_table-item_visited">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="right-section_profile-tabs_item">
+                            <h3 class="right-section_tabs-h3">История</h3>
+                            <div class="right-section_profile-tabs_table">
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-section_profile-tabs_table">
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item right-section_profile-tabs_table-item_visited">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="right-section_profile-tabs_item">
+                            <h3 class="right-section_tabs-h3">История</h3>
+                            <div class="right-section_profile-tabs_table">
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-section_profile-tabs_table">
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item right-section_profile-tabs_table-item_visited">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                                <div class="right-section_profile-tabs_table-item">
+                                    <div class="right-section_profile-tabs_table-item_place">
+                                        Вы заняли: <span>4 место</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_date">
+                                        Дата: <span>22.12.19</span>
+                                    </div>
+                                    <div class="right-section_profile-tabs_table-item_map">
+                                        Карта: <span>Arin_il</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-5" class="right-section_profile-tabs_item">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/tubslet.js">
+    </script>
+    <script src="js/main.js">
+    </script>
+</body>
+</html>
