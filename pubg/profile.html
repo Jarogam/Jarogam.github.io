@@ -75,16 +75,24 @@
             <div class="header_profile">
                 <div class="header_profile-item">
                     <a href="#" class="header_profile-item_icon">
-
+                        <img src="img/icon.png" alt="icon">
                     </a>
-                    <a href="#" class="header_profile-item_mail">
-
-                    </a>
-                    <a href="#" class="header_profile-item_balance">
-
-                    </a>
+                    <div class="header_profile-item_details">
+                        <a href="#" class="header_profile-item_mail">
+                            Profilegg@gmail.com
+                        </a>
+                        <a href="#" class="header_profile-item_balance profile-item_balance">
+                            <span>
+                                Баланс: 
+                            </span>
+                            <span class="profile-item_balance-count">
+                                4 991 руб
+                            </span>
+                        </a>
+                    </div>
+                    <a href="#" class="header_profile-logout">Выйти</a>
                 </div>
-                <a href="#" class="header_profile-logout">Выйти</a>
+                
             </div>
         </div>
         <div class="right-section">
@@ -326,6 +334,7 @@
                             <form action="" class="right-section_profile-tab3_item-form">
                                 <h3>Настройка аккаунта</h3>
                                 <span>Cменить пароль:</span>
+                                <div class="inputs"></div>
                                 <input type="password" placeholder="Ваш пароль">
                                 <input type="password" placeholder="Повторите пароль">
                                 <label for="password">
@@ -375,16 +384,20 @@
                                     <span> -Онлайн-игра в жанре королевской битвы</span>
                                 </div>
                                 <div class="right-section_profile-tab4_item-text_count">
-                                    <span>1 999</span>
-                                    <span>руб/мес</span>
-                                    <select name="select" aria-placeholder="12">
-                                        <option value="value1">Значение 1</option> 
-                                        <option value="value2" selected>Значение 2</option>
-                                        <option value="value3">Значение 3</option>
-                                    </select>
+                                    <span class="right-section_profile-tab4_item-text_count-price">1 999</span>
+                                    <span class="right-section_profile-tab4_item-text_count-currency">руб/мес</span>
+                                    <div class="custom-select">
+                                        <select>
+                                          <option value="0">Колчество дней</option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                          
+                                        </select>
+                                      </div>
                                     
                                 </div>
-                                <a href="#" class="right-section_profile-tab4_item-text_btn"></a>
+                                <a href="#" class="right-section_profile-tab4_item-text_btn">Оформить подписку</a>
                             </div>
                         </div>
                         <div id="tab-5" class="right-section_profile-tabs_item">
@@ -400,7 +413,7 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/tubslet.js">
     </script>
-    <script src="js/main.js">
+    <script src="js/profile.js">
     </script>
 </body>
 </html>

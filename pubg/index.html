@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="">
+    <!-- <link rel="stylesheet" href=""> -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
         </div>
         <div class="header_loginform">
             <a href="#" class="header_loginform-login">Вход</a>
-            <a href="#" class="header_loginform-register">Регистрация</a>
+            <a href="#" class="header_loginform-register popup1_open">Регистрация</a>
         </div>
     </header>
     <main class="main">
@@ -59,13 +59,16 @@
             </div>
             <div class="header_loginform">
                 <a href="#" class="header_loginform-login">Вход</a>
-                <a href="#" class="header_loginform-register">Регистрация</a>
+                <a href="#" class="header_loginform-register popup1_open" >Регистрация</a>
             </div>
         </div>
         <div class=" right-section">
             <section class=" right-section_mainblock">
-                <img src="img/Icon.svg" alt="">
-                <h1>Не пропустите! <br class=" right-section_mainblock-br"></span><span class=" right-section_mainblock-green-words">Скоро</span> <span class=" right-section_mainblock-underline">новый Турнир <span class=" right-section_mainblock-green-words">55 руб</span> за килл</h1>
+                <img src="img/Icon.svg" alt="Icon">
+                <h1>Не пропустите! <br class=" right-section_mainblock-br">
+                    <span class=" right-section_mainblock-green-words">Скоро</span>
+                    <span class=" right-section_mainblock-underline">новый Турнир</span>
+                    <span class=" right-section_mainblock-green-words">55 руб</span> за килл</h1>
                 <p>Режим: Дуо Карта: Эрангель Лицо: от третьего</p>
                 <div class=" right-section_mainblock-counter">
                     <div class=" right-section_mainblock-counter_item">
@@ -204,8 +207,8 @@
                                 <div class="swiper-slide_award-item_text">
                                     <h3>Медаль за Отвагу</h3>
                                     <ul>
-                                        <li>Цена за один килл в обычном турнире 55% от стоимости участия</li><br>
-                                        <li>Цена за один килл в Королевском турнире 19% от стоимости участия</li><br>
+                                        <li>Цена за один килл в обычном турнире 55% от стоимости участия</li>
+                                        <li>Цена за один килл в Королевском турнире 19% от стоимости участия</li>
                                         <li>Выплата 5% по партнерской программе с любого пополнения приглашенного игрока</li>
                                     </ul>
                                 </div>
@@ -393,10 +396,41 @@
             </footer>
         </div>
     </main>
+    
+    <section id="popup1" class="register-popup">
+        <h2>Решистрация аккаунта</h2>
+        <p>Тут вы сможете создать свой аккаунт всего за пару шагов, и вы сможете продолжить использовать наш сервис</p>
+        <div class="register-popup_social">
+            <span>Войти с помощью</span>
+            <div class="register-popup_social-links">
+                <a href="#" class="register-popup_social-links-vk">Вконтакте</a>
+                <a href="#" class="register-popup_social-links-fb">Facebook</a>
+                <a href="#" class="register-popup_social-links-ds">Discord</a>
+            </div>
+        </div>
+        <span class="register-popup_lines">или</span>
+        <form method="POST" class="register-popup_form">
+            <input type="email" name="email" placeholder="Введите ваш email">
+            <input type="password">
+            <input type="password">
+            <input type="checkbox">
+            <a href="#">СОЗДАТЬ АККАУНТ</a>
+            <a href="#">У меня уже есть аккаунт. Войти в него</a>
+        </form>
 
+      </section>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/swiper.min.js">
     </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
+
     <script src="js/main.js">
     </script>
+
+    <!-- Popups -->
+
+
 </body>
 </html>
