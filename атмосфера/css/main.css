@@ -270,6 +270,10 @@ li.ui-tabs-tab {
 .tab-cases__cards #tabs-1 p{
     max-width: 730px;
 }
+.tab-cases .tabs{
+    overflow: visible;
+    margin-bottom: 30px;
+}
 .tabs .indicator{
     background-color: #1e4fa2;
 }
@@ -285,6 +289,7 @@ li.ui-tabs-tab {
     bottom: -15px;
     height: 5px;
     width: 170px;
+    position: relative;
 }
 .tabs .tab{
     margin-right: 30px;
@@ -292,4 +297,86 @@ li.ui-tabs-tab {
 .tabs .tab a{
     color: #1e4fa2;
     padding: 0;
+}
+
+.tabs:before {
+    content: "";
+    width: 780px;
+    height: 5px;
+    background-color: #cccac6;
+    z-index: -1;
+    display: block;
+    position: absolute;
+    left: -205px;
+    bottom: -27px;
+}
+.usecases img{
+    position: relative;
+}
+.usecases__left{
+    position: relative;
+}
+.usecases__left:before {
+    content: "";
+    width: 80%;
+    height: 285px;
+    background-color: #dfc7ad;
+    display: block;
+    position: absolute;
+    left: -170px;
+    bottom: 40px;
+    z-index: -1;
+}
+.usecases__left p{
+    margin-bottom: 90px;
+    margin-top: 80px;
+    color: #1a284c;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.tab-cases__cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tab-cases__cards-item{
+    width: 45%;
+    height: 300px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+.tab-cases__cards-item span{
+color: #9bbbe3;
+font-family: "Gotham Pro";
+font-size: 45px;
+font-weight: 700;
+} 
+.tab-cases__cards-item p{
+    color: #4a74b3;
+    font-family: "Gotham Pro";
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.tab-cases__cards-cubes {
+    background: url(../img/cubes2.png) no-repeat 50px 0px / contain;
+    background-color: #fafafa;
+    background-size: 80%;
+}
+.tab-cases__cards-dotes{
+    background: url(../img/dotes2.png) no-repeat 50px 0px / contain;
+    box-shadow: 20px 23px 56px 4px #d1cdc7;
+    background-color: #dfc7ad;
+}
+.tab-cases__cards-lines{
+    background: url(../img/lines2.png) no-repeat 50px 0px / contain;
+    background-color: #082774;
+}
+.tab-cases__cards-all{
+    background-color: #f0eeef;
+}
+.tab-cases__cards{
+    display: flex;
 }
