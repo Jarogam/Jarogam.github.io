@@ -32,8 +32,8 @@
                         </a>
                     </div>
                     <div class="header-top__right-lang">
-                        <a href="#" class="header-lang__eng">eng</a>
-                        <a href="#" class="header-lang__ua">ua</a>
+                        <a href="#" class="header-top__right-lang__eng header-top__right-lang__active">eng</a>
+                        <a href="#" class="header-top__right-lang__ua">ua</a>
                     </div>
                 </div>
             </div>
@@ -56,7 +56,28 @@
         </div>
     </header>
 
-    <main>
+    <main class="main">
+        
+
+        <div class="carousel carousel-slider">
+            <a class="carousel-item" href="#one!">
+                <img src="img/main-img.jpg" rel="main-bg">
+            </a>
+            <a class="carousel-item" href="#two!">
+                <img src="img/mainbg2.png" rel="main-bg">
+            </a>
+            <a class="carousel-item" href="#three!">
+                <img src="img/mainbg3.jpg" rel="main-bg">
+            </a>
+            <a class="carousel-item" href="#four!">
+                <img src="img/mainbg4.jpg" rel="main-bg">
+            </a>
+            <a class="carousel-item" href="#one!">
+                <img src="img/mainbg5.jpg" rel="main-bg">
+            </a>
+ 
+        </div>
+
         <section class="main-bg">
             <div class="container">
                 <div class="main-bg__text">
@@ -67,19 +88,19 @@
                 </div>
             </div>
             <div class="main-bg__cart1 main-bg__cart">
-                <span class="main-bg_hours">
+                <span class="main-bg__cart-hours">
                     14
                 </span>
                 <p>measured <br> atmospheric <br> indicators</p>
             </div>
             <div class="main-bg__cart2 main-bg__cart">
-                <span class="main-bg_hours">
+                <span class="main-bg__cart-hours">
                     6-12
                 </span>
                 <p>hours ashead of <br> an on-site weather <br> prediction</p>
             </div>
             <div class="main-bg__cart3 main-bg__cart">
-                <span class="main-bg_hours">
+                <span class="main-bg__cart-hours">
                     13+
                 </span>
                 <p>applications <br> of the "Atmosphere" <br> technology</p>
@@ -192,7 +213,7 @@
         <section class="tab-cases">
             <div class="container">
                 <div class="row">
-                    <div class="col s12">
+                    <div class="col s6">
                       <ul class="tabs">
                         <li class="tab"><a class="active" href="#usecases">Use cases</a></li>
                         <li class="tab"><a href="#embedded">Embedded solution</a></li>
@@ -201,14 +222,14 @@
                     <div class="col s12">
                         <div id="usecases">
                             <div class="row">
-                                <div class="col s7">
+                                <div class="col s6">
                                     <div class="usecases__left">
                                         <p>"Atmosphere" is a high-tech constructor. The hardware consists of different arrays of sensors. There is a big variety of combinations that are used in cases, and if needed, it is possible to add or replace sensors. Solutions based on such an approach can be applied in different areas of business, industry and social projects.</p>
                                         <img src="img/irnimg.png" alt="">
                                     </div>
 
                                 </div>
-                                <div class="col s5">
+                                <div class="col s6">
                                     <div class="tab-cases__cards">
                                         <div class="tab-cases__cards-item tab-cases__cards-cubes">
                                             <span>1</span>
@@ -216,18 +237,19 @@
                                                 meta-approach</p>
                                         </div>
                                         <div class="tab-cases__cards-item tab-cases__cards-dotes">
-                                            <span>1</span>
+                                            <span>2</span>
                                             <p>Schools and 
                                                 kindergartens</p>
                                         </div>
                                         <div class="tab-cases__cards-item tab-cases__cards-lines">
-                                            <span>1</span>
+                                            <span>3</span>
                                             <p>Offices</p>
                                         </div>
                                         <div class="tab-cases__cards-item tab-cases__cards-all">
                                             
                                             <p>See all cases</p>
-                                            <span>1</span>
+                                            <img src="img/icons/arrow_rightlight.svg" alt="arrow_rightlight">
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -258,8 +280,72 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer footer-bg">
+        <div class="container">
 
+            <div class="footer-wrapper">
+                <div class="footer-wrapper__left">
+                    <h2>
+                        Get in touch
+                    </h2>
+                    <form>
+                        <div class="footer-group">
+                            <div class="footer-group__box">
+                                <input class="footer-group__box-input" type="text" name="name" required="">
+                                <span class="bar"></span>
+                                <label>Name</label>
+                            </div>
+                            <div class="footer-group__box">
+                                <input class="footer-group__box-input" type="email" name="name" required="">
+                                <span class="bar"></span>
+                                <label>Email</label>
+                            </div>
+                            <div class="footer-group__box">
+                                <input class="footer-group__box-input" type="text" name="name" required="">
+                                <span class="bar"></span>
+                                <label>Surname</label>
+                            </div>
+                            <div class="footer-group__box">
+                                <input class="footer-group__box-input" type="text" name="name" required="">
+                                <span class="bar"></span>
+                                <label>location</label>
+                            </div>
+                        </div>
+        
+                        <div class="footer-group__box footer-msg">
+                            <textarea rows="10" cols="45" name="text" class="footer-group__box-input"></textarea>
+                            <label>Message</label>
+                        </div>
+                        <div class="footer-group__btn">
+                            <button class="footer-btn">send</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-wrapper__right">
+                    <div class="footer-cart">
+                        <ul>
+                            <li>
+                                <img src="img/icons/location_border.svg" alt="location_border">
+                                <a href="#">Kyiv, Ukraine</a>
+                            </li>
+                            <li>
+                                <img src="img/icons/mail_border.svg" alt="mail_border">
+                                <a href="mailto:team@atmosphere.city">team@atmosphere.city</a>
+                            </li>
+                            <li>
+                                <img src="img/icons/facebook_border.svg" alt="facebook_border.svg">
+                                <a href="#">Join us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+
+        </div>
     </footer>
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -281,7 +367,7 @@
         });
 
     </script>
-
+    <script src="js/main.js"></script>
       
 </body>
 </html>

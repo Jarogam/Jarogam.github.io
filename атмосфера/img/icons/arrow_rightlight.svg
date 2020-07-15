@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="26px" fill="#dfc7ad" viewBox="0 0 28 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow_right (2)</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-313.000000, -45.000000)">
+        <g id="arrow_right-(2)" transform="translate(313.000000, 45.000000)" fill="#dfc7ad" fill-rule="nonzero">
+            <g id="Group">
+                <path d="M0.982,14 L27.017,14 C27.414,14 27.773,13.756 27.925,13.383 C28.077,13.009 27.993,12.579 27.712,12.293 L15.923,0.293 C15.539,-0.098 14.918,-0.098 14.534,0.293 C14.15,0.684 14.15,1.316 14.534,1.707 L24.646,12 L0.982,12 C0.439,12 0,12.448 0,13 C0,13.552 0.439,14 0.982,14 Z" id="Shape"></path>
+                <path d="M15.228,26 C15.479,26 15.731,25.902 15.923,25.707 L23.783,17.707 C24.167,17.316 24.167,16.684 23.783,16.293 C23.399,15.902 22.778,15.902 22.394,16.293 L14.534,24.293 C14.15,24.684 14.15,25.316 14.534,25.707 C14.725,25.902 14.977,26 15.228,26 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
