@@ -707,3 +707,311 @@ footer h2{
         margin-left: 80px;
     }   
 }
+
+
+/* 
+
+//  ---===ABOUT PAGE===--- ///
+
+*/
+
+.about-main__text {
+    max-width: 45%;
+}
+.about-main{
+    position: relative;
+    margin: 70px 0;
+}
+.about-main h1{
+    color: #1e4fa2;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 120px;
+    /* Text style for "About" */
+    letter-spacing: -1px;
+}
+.about-main__top-text{
+    width: 47%;
+}
+.about-main__top-text p{
+    color: #1e4fa2;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;   
+}
+.about-main__top-text__bg{
+    color: #1a284c;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    background-color: #dfc7ad;
+    padding: 50px;
+}
+.about-main__top-bg{
+    background: url(../img/aboutnew.png) no-repeat center / cover;
+    width: 52.5%;
+    height: 714px;
+    position: absolute;
+    top: -50px;
+    right: 0;
+}
+.about-main__text-long{
+    color: #1a284c;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+}
+ /* --==howitworks section==-- */
+ 
+.about-howitworks{
+    background-color: #f0eeef;
+    padding: 80px 0 20px;
+}
+.about-howitworks h2{
+    color: #1e4fa2;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+.about-howitworks__schema {
+    position: relative;
+}
+.about-howitworks__schema img{
+    width: 100%;
+}
+.about-howitworks__schema-dowload {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    color: #1e4fa2;
+    z-index: 1;
+}
+.about-howitworks__schema-dowload:hover{
+    color: #06266b;
+
+}
+.about-howitworks__schema-dowload img{
+    vertical-align: middle;
+    margin-left: 30px;
+    max-width: 20px;
+}   
+.modal{
+    max-height: 70%;
+    width: 80%;
+}
+.modal{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    color: #1e4fa2;
+}
+.modal img{
+    width: 100%;
+    max-height: 500px;
+}
+.modal .modal-content{
+    padding-bottom: 0;
+}
+.modal .modal-content h2{
+    margin-top: 25px;
+}
+.modal-footer a {
+    background-image: linear-gradient(to right, #113787 0%, #6e8bbd 100%);
+    color: #fff;
+    padding: 5px 15px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    border-radius: 15px;
+}
+.modal-close__x{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
+.about-hardware{
+    position: relative;
+    padding-top: 40px;
+}
+.about-hardware__wrapper{
+    display: flex;
+}
+.about-hardware__wrapper-left {
+    width: 60%;
+}
+
+.about-hardware__wrapper-left h2{
+    color: #ffffff;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 50px;
+}   
+.about-hardware__wrapper-left p {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 800px;
+    
+}
+.about-hardware__wrapper-left img {
+    width: 100%;
+}
+.about-hardware__wrapper-left:before {
+    content: "";
+    background-color: #1e4fa2;
+    height: 702px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 61%;
+    z-index: -1;
+}
+.about-hardware__wrapper-right__list-item{
+    position: relative;
+}
+
+
+
+
+.about-hardware__wrapper-right{
+    width: 40%;
+}
+.about-hardware__wrapper-right__list{
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 110px;
+}
+.about-hardware__wrapper-right__list span{
+    margin-left: 10px;
+}
+.about-hardware__wrapper-right__list-item:last-child {
+    margin-bottom: 0;
+}
+
+.about-hardware__wrapper-right__list-item {
+    margin-bottom: 50px;
+}
+.about-hardware__wrapper-right__list-item::before {
+    width: 65px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: -70px;
+    display: block;
+}
+.about-hardware__wrapper-right__list-temperature::before{
+    content: "";
+    background: url(../img/icons/temperature.svg) no-repeat center  / contain;
+}
+.about-hardware__wrapper-right__list-humidity::before{
+    content: "";
+    background: url(../img/icons/Humidity.svg) no-repeat center  / contain;
+}
+.about-hardware__wrapper-right__list-wind::before{
+    content: "";
+    background: url(../img/icons/wind.svg) no-repeat center  / contain;
+}
+.about-hardware__wrapper-right__list-acoustic::before{
+    content: "";
+    background: url(../img/icons/ACOUSTIC.svg) no-repeat center  / contain;
+}
+.about-hardware__wrapper-right__list-co2::before{
+    content: "";
+    background: url(../img/icons/CO2.svg) no-repeat center  / contain;
+}
+.about-hardware__wrapper-right__list-air::before{
+    content: "";
+    background: url(../img/icons/AQI.svg) no-repeat center  / contain;
+}
+.about-hardware__wrapper-right__list-atmospheric::before{
+    content: "";
+    background: url(../img/icons/Pressure.svg) no-repeat center  / contain;
+}
+
+
+.about-software{
+    padding: 70px 0;
+}
+.about-software__wrapper{
+display: flex;
+}
+
+.about-software__wrapper-left{
+    width: 53%;
+    margin: 5px;
+
+}
+.about-software__wrapper-left h2{
+    color: #1e4fa2;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 95px;
+}
+.about-software__wrapper-left p{
+    color: #1a284c;
+    font-family: "Gotham Pro";
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.about-software__wrapper-right{
+    width: 47%;
+    margin: 5px;
+    display: flex;
+}
+.about-software__wrapper-right img{
+    width: 100%;
+}
+
+.footer-about{
+    background-color: #f0eeef;
+    padding: 30px 0;
+}
+.footer-about__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-about__wrapper-right ul {
+    overflow: overlay;
+    margin: 0;
+    margin-right: 35px;
+}
+.footer-about__wrapper-right{
+    display: flex;
+}
+.footer-about__wrapper-right ul li{
+    float: left;
+}
+.footer-about__wrapper-right ul li:last-child a::after{
+    display: none;
+}
+
+
+.footer-about__wrapper-right ul li a {
+    color: #1a284c;
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 25px;
+    transition: all .4px ease-in;
+}
+.footer-about__wrapper-right ul li a:hover {
+    color: #113787;
+}
+.footer-about__wrapper-right ul li a::after {
+    content: "";
+    border-right: 1px solid #1a284c;
+    padding-right: 15px;
+}
+.footer-about__wrapper-right__soc a{
+    margin-right: 10px;
+}

@@ -21,3 +21,8 @@ $('.carousel.carousel-slider').carousel({
 setInterval(function() {
   $('.carousel.carousel-slider').carousel('next');
 }, 3500); // every 5 seconds
+
+
+$(document).ready(function(){
+  $('.modal').modal();
+});
