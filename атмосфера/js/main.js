@@ -1,18 +1,12 @@
-// var instance = M.Carousel.init({
-//     fullWidth: true
-//   });
-
-  // Or with jQuery
-
-//   $('.carousel.carousel-slider').carousel({
-//     fullWidth: true,
-//     autoplay: true
-//   });
-// autoplay();
-// function autoplay() {
-//     $('.carousel.carousel-slider').carousel('next');
-//     setTimeout(autoplay, 4500);
-// }
+jQuery(document).ready(function (e) {
+  var i = function () {
+      e(".burger").click(function (i) {
+          e(this).toggleClass("open"), 
+          e(".header-overlay__content").toggleClass("is-active");
+      });
+  };
+  i();
+}),
 
 $('.carousel.carousel-slider').carousel({
         fullWidth: true
