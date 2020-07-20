@@ -65,6 +65,53 @@
     .footer-cart a{
         font-size: 17px;
     }
+    /* // media for about page */
+    .about-main h1{
+        font-size: 64px;
+    }
+    .about-main__top-text p,
+    .about-main__text-long{
+        font-size: 18px;
+    }
+    .about-main__top-bg{
+        top: -17px;
+    }
+    .footer-about__wrapper-left{
+        width: 25%;
+    }
+    .footer-about__wrapper-left img{
+        width: 100%;
+    }
+    .footer-about__wrapper-right{
+        width: 75%
+    }
+    .footer-about__wrapper{
+        justify-content: space-evenly;
+    }
+    .footer-about__wrapper-right{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .footer-about__wrapper-right ul {
+        margin-right: 0;
+        width: 75%;
+        justify-content: center;
+        display: flex;
+    }
+    .footer-about__wrapper-right__soc {
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .footer-about__wrapper-right ul li a{
+        font-size: 18px;
+    }
+    .footer-about__wrapper-right ul li a{
+        margin-right: 15px;
+    }
+    .footer-about__wrapper-right ul li:last-child a{
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 998px){
@@ -166,6 +213,48 @@
     .footer:before{
         left: 40px;
     }
+        /* // media for about page */
+    .about-main__top{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-main h1{
+        order: 2;
+        margin-top: 530px;
+        margin-bottom: 0px;
+    }
+    .about-main__top-text{
+        width: 100%;
+        order: 3;
+    }
+    .about-main__top-bg{
+        top: -17px;
+        width: 100%;
+        height: 550px;
+        order: 1;
+    }
+    .about-hardware__wrapper-left {
+        width: 55%;
+    }
+    .about-hardware__wrapper-right {
+        width: 45%;
+    }
+    .about-hardware__wrapper-left:before{
+        width: 59%;
+        height: 770px;
+    }
+    .about-hardware__wrapper-right__list{
+        margin-left: 140px;
+    }
+    .footer-about__wrapper-right ul li a {
+        font-size: 15px;
+    }
+    .footer-about__wrapper-left{
+        width: 20%;
+    }
+    .footer-about__wrapper-right {
+        width: 80%;
+    }
 }
 
 @media (max-width: 768px){
@@ -180,6 +269,7 @@
     }
     .header-top__right-logo img{
         width: 100%;
+        max-width: 130px;
     }
     .burger{
         display: block;
@@ -274,6 +364,68 @@
     .tabs:before{
         max-width: 100%;
     }
+    /* // media for about page */
+    .about-main h1{
+        font-size: 52px;
+    }
+    .about-howitworks__schema-dowload{
+        bottom: 10px;
+    }
+    .about-hardware__wrapper-left:before{
+        width: 100%;
+        height: 720px;
+    }
+    .about-hardware__wrapper-left{
+        width: 100%;
+    }
+    .about-hardware__wrapper{
+        flex-direction: column;
+    }
+    .about-hardware__wrapper-left h2{
+        margin: 15px 0;
+    }
+    .about-hardware__wrapper-right{
+        width: 100%;
+    }
+    .about-hardware__wrapper-right__list {
+        margin-top: 50px;
+
+    }
+    .about-software__wrapper{
+        flex-direction: column;
+    }
+    .about-software__wrapper-left{
+        width: 100%;
+        margin: 0;
+    }
+    .about-software__wrapper-right{
+        width: 100%;
+    }
+    .footer-about__wrapper{
+        flex-direction: column;
+    }
+    .footer-about__wrapper-left{
+        width: 100%;
+    }
+    .footer-about__wrapper-left img{
+        max-width: 300px;
+        margin: auto;
+        display: flex;
+    }
+    .footer-about__wrapper-right{
+        width: 100%;
+    }
+    .footer-about__wrapper-right ul{
+        width: 100%;
+        margin: 30px 0;
+    }
+    .footer-about__wrapper-right__soc{
+        width: 100%;
+        justify-content: center;
+    }
+    .about-hardware__wrapper-right__list {
+        margin-left: calc(50% - 55px);
+    }
 }
 
 @media (max-width: 568px){
@@ -326,6 +478,8 @@
     }
     .header-top__left {
         width: 45%;
+        display: flex;
+        align-items: center;
     }
     .header-top__right {
         width: 50%;
@@ -340,6 +494,52 @@
         padding: 5px;
     }
 
+    .about-howitworks{
+        padding: 40px 0 20px;
+    }
+    .about-howitworks h2{
+        font-size: 32px;
+        line-height: 2rem;
+        margin-bottom: 25px;
+    }
+    .about-main__top-text__bg{
+        padding: 15px;
+    }
+    .footer-about__wrapper-right ul li a{
+        margin-right: 10px;
+    }
+    .footer-about__wrapper-right ul li a::after{
+        padding-right: 10px;
+    }
+    .about-main h1{
+        margin-top: 550px;
+        font-size: 40px;
+        line-height: 70px;
+    }
+    .about-main__top-text p, .about-main__text-long{
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+    .about-howitworks__schema img{
+        height: 200px;
+
+    }
+    .about-howitworks__schema-dowload{
+        margin-top: 35x;
+        position: relative;
+    }
+    .about-howitworks__schema-dowload img{
+        height: 20px;
+    }
+    .about-howitworks__schema{
+        text-align: center;
+    }
+    .modal .modal-content h2{
+        font-size: 26px;
+    }
+    .modal{
+        position: fixed;
+    }
 }
 
 @media (max-width: 420px){
@@ -365,6 +565,13 @@
     }
     .footer-btn{
         margin: auto;
+    }
+
+    .about-hardware__wrapper-left:before{
+        height: 800px;
+    }
+    .footer-about__wrapper-right ul li a{
+        font-size: 12px;
     }
 }
 
