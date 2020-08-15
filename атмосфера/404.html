@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmosphere - about</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="icon" href="img/icons/лого.svg" type="image/x-icon">
+</head>
+<body>
+    <section class="notfound">
+        <div class="notfound-plane">
+
+        </div>
+        <div class="notfound-clouds">
+
+        </div>
+        <h1>Oops!</h1>
+        <div class="notfound_text">
+
+            <span>404 ERROR</span>
+            <p>We can’t find <br> the page that you’re <br> looking for :(</p>
+            <a href="index.html">BACK TO HOME <span><img src="img/arrowright.png" alt="arrowright"></span></a>
+
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script>
+        
+
+    var moveSection = document.getElementsByClassName('notfound')[0];
+    var moveTarget_plane = document.getElementsByClassName('notfound-plane')[0];
+    var moveTarget_clouds = document.getElementsByClassName('notfound-clouds')[0];
+
+    moveSection.addEventListener('mousemove', e => {
+    parallax_image(e, moveTarget_plane, -100);
+    parallax_image(e, moveTarget_clouds, -12);
+    });
+
+    function parallax_image(e, target, movement) {
+    var relX = e.pageX - target.offsetLeft;
+    var relY = e.pageY - target.offsetTop;
+
+    TweenMax.to(target, 1, {
+        x: (relX - target.offsetWidth / 2) / target.offsetWidth * movement,
+        y: (relY - target.offsetHeight / 2) / target.offsetHeight * movement
+    });
+    }
+
+
+
+    </script>
+      
+</body>
+</html>

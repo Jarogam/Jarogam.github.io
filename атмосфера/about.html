@@ -8,26 +8,27 @@
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="icon" href="img/icons/лого.svg" type="image/x-icon">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header-top">
                 <div class="header-top__left">
-                    <div class="header-top__right-logo">
-                        <img src="img/лого.png" alt="logo">
-                    </div>
+                    <a href="index.html" class="header-top__right-logo">
+                        <img src="img/icons/лого.svg" alt="logo">
+                    </a>
                 </div>
                 <div class="header-top__right">
                     <div class="header-top__right-contacts mobile-none">
                         <a href="https://www.facebook.com/AtmoWP">
-                            <img src="img/iconfacebook.svg" alt="iconfacebook">
+                            <img src="img/icons/icon facebook.svg" alt="iconfacebook">
                         </a>
                         <a href="mailto:team@atmosphere.city ">
-                            <img src="img/iconmail.svg" alt="iconmail">
+                            <img src="img/icons/icon mail.svg" alt="iconmail">
                         </a>
                         <a href="tel:+380683576851">
-                            <img src="img/iconphone.svg" alt="iconphone">
+                            <img src="img/icons/icon phone.svg" alt="iconphone">
                         </a>
                     </div>
                     <div class="header-top__right-lang">
@@ -45,29 +46,30 @@
         </div>
         <div class="header-overlay__content">
             <div class="header-bottom">
-                <div class="header-top__right-logo">
-                    <img src="img/лого.png" alt="logo">
-                </div>
+
                 <ul>
                     <li>
-                        <a href="#">About</a> 
+                        <a href="index.html">Home</a> 
                     </li>
                     <li>
-                        <a href="#">Cases and solutions</a> 
+                        <a href="about.html" class="nav-active">About</a> 
                     </li>
                     <li>
-                        <a href="#">Blog</a> 
+                        <a href="usecases.html">Cases and solutions</a> 
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a> 
                     </li>
                 </ul>
                 <div class="header-top__right-contacts">
-                    <a href="#">
-                        <img src="img/iconfacebook.svg" alt="iconfacebook">
+                    <a href="https://www.facebook.com/AtmoWP">
+                        <img src="img/icons/icon facebook.svg" alt="iconfacebook">
                     </a>
-                    <a href="#">
-                        <img src="img/iconmail.svg" alt="iconmail">
+                    <a href="mailto:team@atmosphere.city ">
+                        <img src="img/icons/icon mail.svg" alt="iconmail">
                     </a>
-                    <a href="#">
-                        <img src="img/iconphone.svg" alt="iconphone">
+                    <a href="tel:+380683576851">
+                        <img src="img/icons/icon phone.svg" alt="iconphone">
                     </a>
                 </div>
             </div>
@@ -79,13 +81,16 @@
             <div class="container">
                 <ul>
                     <li>
-                        <a href="#">About</a> 
+                        <a href="index.html">Home</a> 
                     </li>
                     <li>
-                        <a href="#">Cases and solutions</a> 
+                        <a href="about.html"  class="nav-active">About</a> 
                     </li>
                     <li>
-                        <a href="#">Blog</a> 
+                        <a href="usecases.html">Cases and solutions</a> 
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a> 
                     </li>
                 </ul>
             </div>
@@ -103,8 +108,7 @@
                             The key to this is technology based on neural networks and predictive analytics.
                         </p>
                         <p class="about-main__top-text__bg">
-                            Meet "Atmosphere", an intelligent weather data processor for outdoor and indoor appliances. It is such a system that aims to tie location to weather. 
-                            The key to this is technology based on neural networks and predictive analytics.
+                            "Atmosphere" is a graph of the most current changes in the local weather for a period from 15 minutes to 12-16 hours for a given square of 2x2 km.
                         </p>
                     </div>
                     <div class="about-main__top-bg">
@@ -152,19 +156,9 @@
             </div>
         </section>
 
-      <!-- Modal Structure -->
-      <div id="modal1" class="modal">
-        <a href="#!" class="modal-close modal-close__x">x</a>
-      <div class="modal-content">
-          <h2>Structural components of the "Atmosphere"</h2>
-          <img src="img/схема_пнг.png" alt="схема_пнг" >
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green">Close</a>
-      </div>
-    </div>
 
-        <section class="about-hardware">
+
+        <section class="about-hardware" id="hardware">
             <div class="container">
                 <div class="about-hardware__wrapper">
                     <div class="about-hardware__wrapper-left">
@@ -177,7 +171,10 @@
                         <p>
                             It is important to underline that the set of sensors dramatically relies on the field of application and even on the specific project system is implemented. Therefore, devices can be equipped with the following sensors
                         </p>
-                        <img src="img/ILLUSTRATIONabout.png" alt="packeges">
+                        <div class="about-hardware__wrapper-left__img">
+                            <img src="img/ILLUSTRATIONabout.png" alt="packeges">
+                        </div>
+                        
                     </div>
                     <div class="about-hardware__wrapper-right">
                         <ul class="about-hardware__wrapper-right__list">
@@ -209,12 +206,12 @@
             </div>
 
         </section>
-        <section class="about-software">
+        <section class="about-software" id="software">
             <div class="container">
                 <div class="about-software__wrapper">
                     <div class="about-software__wrapper-left">
                         <h2>Software</h2>
-                        <p>Meanwhile, the software takes the form of an application. The interface and functional parts are both changeable depending on the field of application. 
+                        <p>Meanwhile, the software takes the form of an application. The interface and functional parts are both changeable depending on the field of application. <br>
                             For users, there will be an app with mobile predictions and advice, which are based on weather indicators and even health data. Business is a different case because service requires different variations. Functional and visual parts depend on the field of application and set of data analyzed by the system.</p>
                     </div>
                     <div class="about-software__wrapper-right">
@@ -225,30 +222,62 @@
         </section>
     </main>
 
-
-
-            
-
-
     <footer class="footer-about">
         <div class="container">
             <div class="footer-about__wrapper">
                 <div class="footer-about__wrapper-left">
-                    <img src="img/лого.png" alt="лого">
+                    <img src="img/icons/лого.svg" alt="лого">
                 </div>
+                <div class="burger burger-footer">
+                    <div class="burger-brick"></div>
+                    <div class="burger-brick middle"></div>
+                    <div class="burger-brick"></div>
+                </div>
+
+
+                <div class="header-overlay__content footer-overlay__content">
+                    <div class="header-bottom">
+                      
+                        <ul>
+                            <li>
+                                <a href="about.html">About</a> 
+                            </li>
+                            <li>
+                                <a href="usecases.html">Cases and solutions</a> 
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a> 
+                            </li>
+                        </ul>
+                        <div class="header-top__right-contacts">
+                            
+                                <a href="https://www.facebook.com/AtmoWP">
+                                    <img src="img/icons/icon facebook.svg" alt="iconfacebook">
+                                </a>
+                                <a href="mailto:team@atmosphere.city ">
+                                    <img src="img/icons/icon mail.svg" alt="iconmail">
+                                </a>
+                                <a href="tel:+380683576851">
+                                    <img src="img/icons/icon phone.svg" alt="iconphone">
+                                </a>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="footer-about__wrapper-right">
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="#">About</a>
+                            <a href="about.html">About</a>
                         </li>
                         <li>
-                            <a href="#">Cases and solutions</a>  
+                            <a href="usecases.html">Cases and solutions</a>  
                         </li>
                         <li>
-                            <a href="#">Blog</a>
+                            <a href="blog.html">Blog</a>
                         </li>
                     </ul>
                     <div class="footer-about__wrapper-right__soc">
@@ -260,7 +289,17 @@
         </div>
     </footer>
 
-
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <a href="#!" class="modal-close modal-close__x">x</a>
+      <div class="modal-content">
+          <h2>Structural components of the "Atmosphere"</h2>
+          <img src="img/схема_пнг.png" alt="схема_пнг" >
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green">Close</a>
+      </div>
+    </div>
 
 
 
@@ -268,5 +307,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/main.js"></script>
+
+
 </body>
 </html>

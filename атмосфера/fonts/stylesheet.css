@@ -31,7 +31,7 @@
 }
 
 @font-face {
-	font-family: 'Gotham Pro';
+    font-family: "Gotham Pro Medium";
 	src: url('GothamPro-Medium.eot');
 	src: local('Gotham Pro Medium'), local('GothamPro-Medium'),
 		url('GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
@@ -53,7 +53,7 @@
 }
 
 @font-face {
-	font-family: 'Gotham Pro';
+	font-family: 'Gotham Pro bold';
 	src: url('GothamPro-Bold.eot');
 	src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
 		url('GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
@@ -86,7 +86,7 @@
 }
 
 @font-face {
-	font-family: 'Gotham Pro';
+	font-family: 'Gotham Pro light italic';
 	src: url('GothamPro-LightItalic.eot');
 	src: local('Gotham Pro Light Italic'), local('GothamPro-LightItalic'),
 		url('GothamPro-LightItalic.eot?#iefix') format('embedded-opentype'),
@@ -97,7 +97,7 @@
 }
 
 @font-face {
-	font-family: 'Gotham Pro';
+	font-family: 'Gotham Pro light';
 	src: url('GothamPro-Light.eot');
 	src: local('Gotham Pro Light'), local('GothamPro-Light'),
 		url('GothamPro-Light.eot?#iefix') format('embedded-opentype'),
