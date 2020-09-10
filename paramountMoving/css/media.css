@@ -1,0 +1,406 @@
+@media (max-width: 1450px){
+
+    .header-top__wrapper-right__links a {
+        padding: 15px;
+      }
+      .header-bottom__wrapper{
+
+        right: 0px;
+      }
+      .dropdownmenu a{
+        padding: 15px 20px;
+      }
+}
+@media (max-width: 1280px){
+    .header-top__wrapper-right__links a {
+        padding: 12px;
+    }
+    .header-top__wrapper-right__btn{
+        margin: 0;
+    }
+    .header-top__wrapper-right__btn{
+        width: 35%;
+    }
+    .dropdownmenu a {
+        padding: 15px;
+    }
+    .header-top__wrapper-left__logo{
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 1024px){
+    .container {
+        width: 95%;
+    }    
+    .Whywe-wrapper__item h3{
+        height: 60px;
+        font-size: 17px;
+    }
+    .form{
+        margin-left: 20px;
+    }
+}
+@media (max-width: 1200px){
+
+}
+@media (max-width: 998px){
+    .header{
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .header-bottom,
+    .header-top__wrapper-right__links{
+        display: none;
+    }
+    .menu-collapsed .header-top__wrapper-left__telephone a{
+        display: none;
+    }
+    .header-top__wrapper-left {
+        width: 60%;
+    }
+    .header-top__wrapper-right__btn{
+        width: 60%;
+    }
+    .header-top__wrapper-left__logo{
+        justify-content: center;
+    }
+    .bar {
+        position: fixed;
+        right: 50px;
+        left: unset;
+        margin: auto;
+        top: 48px;
+    }
+    .menu-collapsed{
+        display: block;
+    }
+    .whychooseus{
+        height: 1380px;
+        background-size: 100%;
+    }
+    .whychooseus {
+        background-size: 100%;
+        height: 1370px;
+    }
+    .form{
+        margin: auto;
+    }
+    
+}
+@media (max-width: 768px){
+    .header-top__wrapper-right__btn {
+        width: 60%;
+        justify-content: center;
+    }
+    .main-bg h1{
+        font-size: 32px;
+    }
+    .about-btn{
+        top:-70px;
+    }
+    .about-content__img{
+        margin: auto;
+    }
+    .about-content__text br{
+        display: none;
+    }
+    .Whywe-wrapper__item {
+        width: 50%;
+    }
+    .Whywe-wrapper__item h3{
+        padding: 0px 95px;
+    }
+    .services-wrapper{
+        justify-content: space-around;
+    }
+    .services-wrapper__item{
+        width: 45%;
+    }
+    .whychooseus-wrapper__item {
+        width: 33%;
+        flex-direction: column;
+    }
+    .whychooseus-wrapper__item-circle{
+        margin: 0 auto;
+        display: block;
+    }
+    .whychooseus-wrapper__item-text {
+        width: 100%;
+    }
+    .whychooseus-wrapper__item-text h3{
+        padding: 0 15px;
+    }
+    .whychooseus-wrapper__item-text p{
+        padding: 0 15px;
+    }
+    .form{
+        width: 65%;
+    }
+    /* .form-input_date input{
+        width: 55%;
+    } */
+    .reviews-wrapper__item{
+        width: 100%;
+    }
+    .blog-news__right-blocks__top img, .blog-news__right-blocks__bottom img{
+        height: auto;
+        object-fit: scale-down;
+    }
+    .footer-wrapper{
+        flex-wrap: wrap;
+    }
+    .footer-wrapper__logo{
+        width: 40%;
+    }
+    .footer-wrapper__contacts{
+        width: 55%;
+    }
+    .footer-wrapper__services-links {
+        width: 25%;
+        margin-top: 40px;
+        margin-left: 45%;
+    }
+    .footer-wrapper__pages {
+        width: 20%;
+        margin-top: 40px;
+    }
+    .form h3{
+        font-size: 22px;
+        text-align: center;
+    }
+    .form p{
+        text-align: center;
+    }
+    .form input{
+        padding: 10px 0px 8px 0px;
+    }
+    .form input::placeholder{
+        padding-left: 20px;
+    }
+
+}
+@media (max-width: 568px){
+
+    .header-top__wrapper-left__logo {
+        justify-content: end;
+        width: 45%;
+    }
+    .header-top__wrapper-right__btn {
+        width: 60%;
+    }
+    .header-top__wrapper-left__telephone{
+        display: none;
+    }
+    .menu-collapsed .header-top__wrapper-left__telephone a{
+        display: block;
+    }
+    .header-top__wrapper-left {
+        width: 20%;
+    }
+    .header-top__wrapper-right {
+        width: 80%;
+    }
+    .main-bg{
+        background: linear-gradient( rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5) ), url(../img/AdobeStock_352777047_Preview.png) no-repeat center / cover;
+    }
+    .whychooseus-wrapper{
+        flex-wrap: wrap;
+    }
+    .whychooseus-wrapper__item{
+        flex-direction: row;
+        width: 100%;
+    }
+    .whychooseus-wrapper__item-circle{
+        margin: auto;
+    }
+    .whychooseus-wrapper__item-text{
+        width: 75%;
+    }
+    .Whywe-wrapper__item h3{
+       padding: 0 40px; 
+    }
+    .blog-news__left-block{
+        flex-direction: row;
+        margin-right: 0;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .blog-news__left-block__img{
+        width: 45%;
+    }
+    .blog-news__left-block__text {
+        width: 50%;
+    }
+    .blog-news__left-block__text h3{
+        margin-top: 0;
+    }
+    .blog-news__right-blocks{
+        width: 100%;
+    }
+    .blog-news__right-blocks__top img, .blog-news__right-blocks__bottom img {
+        height: 100%;
+        object-fit: cover;
+        max-height: 165px;
+    }
+    .header-top__wrapper-left__telephone a img {
+        max-width: 40px;
+    }
+    .form {
+        width: 90%;
+    }
+}
+@media (max-width: 420px){
+    .main-bg h1{
+        font-size: 26px;
+    }
+    .main-bg h1 br{
+        display: none;
+    }
+    .bg-section h2{
+        font-size: 20px;
+    }
+    .about-btn {
+        top: -60px;
+    }
+    .Whywe-wrapper__item h3,
+    .Whywe-wrapper__item p {
+        padding: 0 10px;
+    }
+    p.main-bg__text-orange{
+        font-size: 21px;
+    }
+    .about-content__text{
+        width: 100%;
+    }
+    .about-content{
+        flex-wrap: wrap;
+    }
+    .about-content__text,
+    .about-content__img{
+        width: 100%;
+    }
+    .about-content__text p{
+        text-align: center;
+    }
+    .services-wrapper__item p {
+        font-size: 14px;
+        padding: 5px 0px;
+        min-height: 40px;
+    }
+    .form-input_date input{
+        width: 65%;
+    }
+    .form-btn a{
+        padding: 10px 15px;
+    }
+    .blog-news__left-block__img {
+        width: 35%;
+    }
+    .blog-news__left-block__text {
+        width: 60%;
+    }
+    .blog-news__right-blocks__bottom-img, .blog-news__right-blocks__top-img {
+        width: 35%;
+    }
+    .blog-news__right-blocks__bottom-text, .blog-news__right-blocks__top-text {
+        width: 60%;
+    }
+    .blog-news__right-blocks__top img, .blog-news__right-blocks__bottom img {
+        max-height: 105px;
+    }
+    .footer-wrapper__logo {
+        width: 100%;
+    }
+    .footer-wrapper a {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    .footer-wrapper__logo-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .footer-wrapper__contacts {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-wrapper__contacts ul {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-wrapper__services-links {
+        margin: auto;
+        width: 41%;
+        padding-left: 0;
+        margin-left: 10px;
+    }
+    .footer-wrapper__services-links a{
+        text-align: left;
+    }
+    .footer-wrapper__pages {
+        width: 40%;
+        margin-top: 0;
+        padding-right: 10px;
+    }
+    .footer-wrapper__pages a{
+        text-align: right;
+    }
+    .footer-copyright {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+@media (max-width: 420px){
+    .bar {
+        right: 20px;
+    }
+    .form {
+        width: 95%;
+    }
+    .form h3{
+        margin-top: 10px;
+    }
+    .form input {
+        padding: 5px 0px 8px 0px;
+    }
+    .form-btn a {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .blog-news p{
+        font-size: 14px;
+    }
+    .blog-news h3 {
+        font-size: 18px;
+    }
+
+}
+@media (max-width: 360px){
+    .services-wrapper__item p {
+        padding: 0;
+        min-height: 40px;
+        font-size: 12px;
+    }
+    .header-top__wrapper-right__btn {
+        width: 100%;
+    }
+    .header-top__wrapper-right {
+        width: 70%;
+    }
+    .header-top__wrapper-left {
+        width: 30%;
+    }
+    .whychooseus {
+        height: 1550px;
+    }
+    
+}
+@media (max-width: 320px){
+    .header-top__wrapper-right__btn a{
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
