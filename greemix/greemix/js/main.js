@@ -11,6 +11,12 @@ $(document).ready(function () {
     });
 });
 
+var someDiv = $('.left-panel a');
+someDiv.on('click', function() {
+	someDiv.removeClass('open');
+  $(this).addClass('open');
+});
+
 
 
 var elem = document.documentElement;
