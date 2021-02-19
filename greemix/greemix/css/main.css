@@ -222,12 +222,14 @@ ul{
 }
 
 .left-panel.active h2{
-    display: none;
+    opacity: 0;
+    height: 0;
 }
 
 .left-panel h2 {
     padding: 15px 0;
     color: #8590a5;
+    transition: all .5s ease-in-out;
 }
 
 .left-panel img{
@@ -303,34 +305,7 @@ ul{
 .left-panel .left-panel__link-icon{
     visibility: visible;
     opacity: 1;
-    transition: opacity 0.14s, transform 0.2s;
 }
-.left-panel li:nth-child(1) {
-    transition: opacity 0.14s, transform 0.2s;
-}
-.left-panel li:nth-child(2) {
-    transition: opacity 0.16s, transform 0.2s;
-}
-.left-panel li:nth-child(3) {
-    transition: opacity 0.2s, transform 0.2s;
-}
-.left-panel li:nth-child(4) {
-    transition: opacity 0.24s, transform 0.2s;
-}
-.left-panel li:nth-child(5) {
-    transition: opacity 0.28s, transform 0.2s;
-}
-.left-panel li:nth-child(6) {
-    transition: opacity 0.32s, transform 0.2s;
-}
-.left-panel li:nth-child(7) {
-    transition: opacity 0.36s, transform 0.2s;
-}
-.left-panel li:nth-child(8) {
-    transition: opacity 0.4s, transform 0.2s;
-}
-
-
 
 .content {
     padding: 0 15px;
@@ -348,10 +323,12 @@ ul{
 
 .left-panel.active .left-panel__logout span {
     display: none;
+    
 }
 
 .left-panel.active .left-panel__logout a {
     display: block;
+    
 }
 
 .left-panel.active .left-panel__logout {
@@ -428,15 +405,23 @@ ul{
   ul.menu li ul{
     display: none;
   }
+
   ul.menu li{
     list-style: none;
   }
+
+  ul.menu li a{
+      color: #fff;
+  }
+
   ul.menu li:hover > ul{
     display: block;
   }
+
   ul.menu li ul {
     display: none;	/*скрываем вложенные пункты*/
    }
+
    ul.menu li:hover {
     position: relative;
   }
