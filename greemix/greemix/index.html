@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    
+    <main class="main">
+        <nav class="header-panel">
+            <div class="header-panel__left">
+                <div class="header-panel__left-logo">
+                    <a href="">
+                        <img src="img/photos.svg" alt="logo">
+                        <span>LogoGremmik</span>
+                        
+                    </a>
+                </div>
+                <div class="header-panel__left-btn">
+                    <a href="#">
+                        <span class="btn"></span>
+                    </a>
+                </div>
+                <div class="header-panel__left-search search__container">
+                    <input class="search__input" type="text" placeholder="Search">
+                </div>
+
+            </div>
+            <div class="header-panel__right">
+                
+                <div class="header-panel__left-fullscreen">
+                    <button onclick="openFullscreen();"><img src="img/fullscreen.svg" alt="fullscreen"></button>
+                </div>
+                <div class="header-panel__right-account">
+        
+                    <div class='profile'>
+                        <div class='profile__avatar i-block pull-left'>
+                
+                        </div>
+                        <div class='profile__name i-block pull-left'></div>
+                        <ul class='menu'>
+                          <li class='menu__item'>Home</li>
+                          <li class='menu__item'>Profile</li>
+                          <li class='menu__item'>Settings
+                            <ul>
+                                <li>Пользователи</li>
+                            </ul>
+                          </li>
+                          <li class='menu__item'>Log out</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="left-panel">
+            <h2>Пользователи</h2>
+            <ul class="left-panel__users">
+                <li>
+                    <img class="left-panel__link-icon" src="img/settings-900797.svg" alt="icon"> <a class="left-panel__link left-panel__link-open" href="#"> Все пользователи <img class="left-panel__link-arrow" src="img/next.svg" alt="img"></a>
+                    <ul class="left-panel__users-dropdown">
+                        <li><a href="">link 1</a> </li>
+                        <li><a href="">link 1</a> </li>
+                        <li><a href="">link 1</a> </li>
+                    </ul>
+                </li>
+                <li>
+                    <img class="left-panel__link-icon" src="img/settings-900797.svg" alt="icon"> <a href="#"> Новые</a>
+                </li>
+                <li>
+                    <img class="left-panel__link-icon" src="img/settings-900797.svg" alt="icon"> <a href="#"> Акции</a>
+                </li>
+                <li>
+                    <img class="left-panel__link-icon" src="img/settings-900797.svg" alt="icon"> <a href="#"> Актуальные</a>
+                </li>
+                <li>
+                    <img class="left-panel__link-icon" src="img/settings-900797.svg" alt="icon"> <a href="#"> Розсылка</a>
+                </li>
+                <li>
+                    <img class="left-panel__link-icon" src="img/settings-900797.svg" alt="icon"> <a href="#"> Редактировать</a>
+                </li>
+                <li>
+                    <img class="left-panel__link-icon" src="img/settings-900797.svg" alt="icon"> <a href="#"> Сводная информация</a>
+                </li>
+                <li>
+                    <img class="left-panel__link-icon" src="img/settings-900797.svg" alt="icon"> <a href="#"> Объекты</a>
+                </li>
+                <li>
+                    <img class="left-panel__link-icon" src="img/settings-900797.svg" alt="icon"> <a href="#"> Пользователи</a>
+                </li>
+            </ul>
+            <!-- <h2>Компоненты</h2>
+            <ul class="left-panel__components">
+                <li>
+                    <img class="left-panel__link-icon" src="img/settings-900797.svg" alt="icon"> <a href="#"> Блок</a>
+                </li>
+                <li>
+                    <img class="left-panel__link-icon" src="img/settings-900797.svg" alt="icon"> <a href="#"> Схема</a>
+                </li>
+                <li>
+                    <img class="left-panel__link-icon" src="img/settings-900797.svg" alt="icon"> <a href="#"> Диаграма</a>
+                </li>
+                <li>
+                    <img class="left-panel__link-icon" src="img/settings-900797.svg" alt="icon"> <a href="#"> Статистика</a>
+                </li>
+                <li>
+                    <img class="left-panel__link-icon" src="img/settings-900797.svg" alt="icon"> <a class="left-panel__link" href="#"> Результат <img class="left-panel__link-arrow" src="img/next.svg" alt="img"></a>
+                </li>
+            </ul> -->
+            <!-- <h2>Страницы</h2>
+            <ul class="left-panel__pages">
+                <li>
+                    <img class="left-panel__link-icon" src="img/settings-900797.svg" alt="icon"> <a href="#"> Головна</a>
+                </li>
+                <li>
+                    <img class="left-panel__link-icon" src="img/settings-900797.svg" alt="icon"> <a href="#"> О нас</a>
+                </li>
+                <li>
+                    <img class="left-panel__link-icon" src="img/settings-900797.svg" alt="icon"> <a href="#"> Контакты</a>
+                </li>
+                <li>
+                    <img class="left-panel__link-icon" src="img/settings-900797.svg" alt="icon"> <a href="#"> Общее</a>
+                </li>
+                <li>
+                    <img class="left-panel__link-icon" src="img/settings-900797.svg" alt="icon"> <a class="left-panel__link" href="#"> Магазин <img class="left-panel__link-arrow" src="img/next.svg" alt="img"></a>
+                </li>
+            </ul> -->
+
+            <div class="left-panel__logout">
+                <a href="#"><img src="img/exit.svg" alt="exit"> <span>Выйти</span></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="container">
+
+            </div>
+            <h1>Admin panel</h1>
+            <div class="content-blocks">
+                <div class="content-blocks__items">
+                    
+                </div>
+                <div class="content-blocks__items">
+                    
+                </div>
+                <div class="content-blocks__items">
+                    
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sapiente laudantium qui debitis non expedita, eveniet officiis, dolor voluptatem voluptate voluptates vitae repudiandae rerum ad fugiat minima quisquam recusandae enim sed possimus? Laborum rerum quos, omnis culpa, velit placeat iste mollitia dignissimos consequatur perferendis consequuntur possimus, unde quae ullam nobis dolores eos odio! Quam voluptatibus iure debitis doloremque eligendi, tempore nulla mollitia perspiciatis dolorum, veniam vero incidunt magni nihil laborum quisquam odio adipisci asperiores, nostrum dolores ut iste repellendus. Sapiente obcaecati iure magni maiores numquam, minus dolorum optio iste! 
+                Quod ab ut sunt incidunt natus, repellendus nostrum nihil error architecto.</p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, a? Voluptatibus sequi laudantium ex cupiditate eum. Asperiores nulla cumque velit praesentium, necessitatibus, eaque similique natus fuga quidem earum incidunt ad? Ducimus sit impedit ipsum nemo deserunt veritatis? Soluta, laboriosam? Ut odit doloribus quaerat qui magni praesentium hic in corrupti porro ullam, sint dolorum mollitia ipsam id dolore eius ea veniam voluptatem. Fugit vero molestiae mollitia tempora harum, doloribus in sint rerum similique distinctio omnis libero, placeat eaque delectus exercitationem nisi architecto dignissimos tempore soluta corrupti est veritatis natus? A repellat voluptates animi placeat sit sapiente voluptate deleniti dolorum culpa saepe? Dolore assumenda amet, atque eius recusandae corrupti. Dolores assumenda eaque quia soluta dolorem ea voluptatibus. Magni velit nam beatae! Ipsum, recusandae magni pariatur placeat enim ut! Facilis incidunt optio consequatur nisi repudiandae sunt! Facilis libero autem eum dolores! Tempora in minima suscipit molestiae illo quidem, nisi voluptatem necessitatibus esse provident nam doloremque fuga doloribus est, omnis recusandae voluptatibus ut praesentium ad, molestias quaerat dignissimos officia? Dolor voluptas maxime non dignissimos quasi ipsum beatae commodi consequatur corrupti hic veritatis, sit, nesciunt magnam nisi possimus at temporibus dolores omnis earum cupiditate quia, ab aliquam. Consectetur voluptatem perferendis fugiat. Id fuga impedit odit dolor vitae aliquid repudiandae expedita voluptate repellat nulla, vero sapiente placeat ipsa veritatis dolorum? Iste officia, esse enim, quisquam nulla corrupti id, consequatur ducimus accusamus debitis tempore similique sapiente nihil neque eligendi. Quam non accusantium tenetur sint ea qui facilis expedita quisquam? Illum magni minus cum nostrum quo, hic labore temporibus, vel asperiores nisi maxime, dolores sunt recusandae non! Quas dignissimos provident quis perferendis voluptatum, laborum dolorum minus. Possimus suscipit consequatur sint, necessitatibus earum, pariatur dolores excepturi obcaecati deleniti autem sed dolorem aspernatur ratione, at quidem architecto ad reiciendis fugiat quisquam. Esse velit necessitatibus dicta laudantium architecto, voluptatibus non asperiores consequuntur. Totam, repellat officia ducimus, facere itaque iste quia quis, quam dicta explicabo amet vel aperiam alias similique magnam iusto culpa beatae autem quos cum hic ipsum ullam? Quaerat hic eveniet quod vero nam veritatis cum distinctio magnam accusantium, ab assumenda esse doloribus. Non saepe a maxime, molestiae magni at eum praesentium vel cumque ipsam illum deserunt fugiat, odit accusamus sequi quaerat amet? Quisquam molestiae optio nostrum. Odit pariatur distinctio repellendus possimus ut asperiores sed eos voluptates ad incidunt excepturi animi dignissimos ipsam quod porro, eius sunt. Et optio quidem doloribus aliquam, architecto fugiat ex autem, odit impedit neque consequatur illum distinctio atque cupiditate non dolor laboriosam, quas perspiciatis fugit esse doloremque laudantium ea ad hic? A amet sapiente suscipit culpa deserunt praesentium aliquid quod reprehenderit atque minima quasi magnam harum mollitia dignissimos fugit architecto, neque quidem maiores iusto ut voluptas nulla vero perspiciatis! Unde aspernatur, saepe quidem natus esse eligendi, a accusantium voluptatem recusandae atque dolore molestiae perferendis commodi reiciendis nihil rem distinctio deleniti, corporis nostrum quo labore exercitationem vitae. Architecto recusandae, neque quas culpa vero delectus. Illum id eius, molestias distinctio quam repellat laborum dolorum est ex minima consequuntur sit dolorem, voluptatum quibusdam ducimus nobis deleniti aliquam? Dolorum.
+            </p>
+        </div>
+
+    </mian>
+
+    <footer>
+
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
