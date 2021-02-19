@@ -90,12 +90,10 @@ ul{
 .search__input {
     width: 100%;
     padding: 12px 24px;
-    margin-top: 10px;
     background-color: transparent;
     transition: transform 250ms ease-in-out;
     font-size: 14px;
     line-height: 18px;
-    
     color: #575756;
     background-color: transparent;
     outline: none;
@@ -207,6 +205,12 @@ ul{
     margin-top: 80px;
     padding-left: 20px;
     width: 250px;
+
+}
+
+.left-panel,
+.header-panel__left-logo{
+    transition: all .5s ease-in-out;
 }
 
 .left-panel.active{
@@ -247,13 +251,15 @@ ul{
 }
 
 .left-panel__users-dropdown{
-    display: none;
+    height: 0;
+    overflow: hidden;
     transition: all .5s ease-in;
 }
 
 .left-panel__users-dropdown.open {
-    display: block;
+    height: auto;
     padding-left: 40px;
+    transition: all .5s ease-in;
 }
 .left-panel__users-dropdown .open li{
     transition: all 1s ease-out;
