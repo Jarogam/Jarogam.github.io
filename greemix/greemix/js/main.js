@@ -2,6 +2,7 @@ $(document).ready(function () {
     $('.header-panel__left-btn a').on('click', function () {
         $('.left-panel').toggleClass('active');
         $('.header-panel__left-logo').toggleClass('active');
+        $('.btn').toggleClass('btn-active');
     });
 });
 

@@ -198,6 +198,29 @@ ul{
     bottom: -8px;
 }
 
+.btn-active{
+    height: 0;
+    transition: all .2s ease-in-out;
+}
+
+.btn-active::before {
+    top: 0px;
+    width: 25px;
+    height: 2px;
+    transform: rotate(-45deg);
+    transition: all .5s ease-in-out;
+}
+
+.btn-active::after {
+    bottom: -2px;
+    width: 25px;
+    height: 2px;
+    transform: rotate(45deg);
+    transition: all .5s ease-in-out;
+}
+
+
+
 .left-panel{
     position: fixed;
     background: #232938;
