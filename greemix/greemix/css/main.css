@@ -339,6 +339,23 @@ ul{
     background: #707894;
 }
 
+.left-panel__users-active-page{
+    background: #707894;
+
+}
+.left-panel__users-active-page span {
+    color: #fff;
+}
+.left-panel__users-active-page{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-left: 3px solid #fff;
+}
+
+
 .left-panel li:hover::before {
     content: "";
     position: absolute;
