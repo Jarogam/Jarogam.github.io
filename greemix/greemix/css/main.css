@@ -234,8 +234,12 @@ ul{
     transition: all .3s ease-in-out;
 }
 
-.left-panel.active{
+.left-panel.active {
     width: 55px;
+}
+
+.left-panel.active span {
+    display: none;
 }
 
 .left-panel.active a span, .left-panel__link-arrow, .left-panel.active h2{
@@ -261,6 +265,7 @@ ul{
     top: 0px;
     left: 0;
     width: max-content;
+    display: block;
 }
 
 
@@ -285,6 +290,10 @@ ul{
 }
 .left-panel.active li:hover .left-panel__users-dropdown li{
     background: #fff;
+}
+
+.left-panel.active li:hover .left-panel__users-dropdown a:hover{
+    color: #000;
 }
 
 .left-panel a span, .left-panel h2 {
@@ -328,6 +337,15 @@ ul{
 
 .left-panel li:hover {
     background: #707894;
+}
+
+.left-panel li:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-left: 3px solid #fff;
 }
 
 .left-panel li:hover span {
@@ -398,8 +416,7 @@ ul{
 }
 
 .left-panel.active .left-panel__logout span {
-    display: none;
-    
+    display: none;   
 }
 
 .left-panel.active .left-panel__logout a {
