@@ -277,6 +277,8 @@ ul{
     padding-left: 25px;
 }
 
+
+
 .left-panel.active li:hover .left-panel__users-dropdown {
     position: absolute;
     top: 35px;
@@ -369,22 +371,27 @@ ul{
     color: white;
 }
 
-.left-panel__users-dropdown{
+.left-panel__users-dropdown {
     height: 0;
     overflow: hidden;
     transition: all .3s ease-in;
 }
-.left-panel__users-dropdown .open li{
+.left-panel__users-dropdown .open li {
     transition: all .3s ease-out;
 }
+
+.left-panel .left-panel__users-dropdown li:hover::before {
+    border-left: none;
+}
+
 .left-panel__link-icon {
     padding-right: 10px;
 }
-.left-panel .open{
+.left-panel .open {
     color: #fff;
 }
 
-.left-panel a{
+.left-panel a {
     color: #8590a5;
     padding: 5;
     transition: all .5s ease;
