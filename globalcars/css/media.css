@@ -1,0 +1,362 @@
+@media screen and (min-width: 1600px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+    .auctions::after {
+        top: -70px;
+        width: 260px;
+        height: 340px;
+        background-size: cover;
+    }
+
+    .auctions h2 {
+        font-size: 24px;
+    }
+    .header-wrapper {
+        width: 100%;
+        max-width: 960px;
+    }
+
+    .header-wrapper__menu,
+    .header-wrapper__contacts {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+        width: 10%;
+    }
+    .header-wrapper__logo {
+        width: 80%;
+    }
+    
+    .header-wrapper__layout.active {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgb(0 0 0 / 95%);
+        width: 50%;
+        height: 100vh;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        transition: left .5s ease-in-out;
+    }
+
+    ul.header-wrapper__menu {
+        padding-left: 0;
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    ul.header-wrapper__menu li {
+        float: none;
+        margin: 15px 0;
+    }
+
+    .header-wrapper__layout .header-wrapper__contacts {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        bottom: 15px;
+        padding: 0;
+        margin: auto;
+    }
+
+    .header-wrapper__contacts a {
+        text-align: center;
+        display: block;
+    }
+
+    .header-wrapper__layout.active .header-wrapper__menu,
+    .header-wrapper__layout.active .header-wrapper__contacts{
+        display: block;
+    }
+
+    .contacts-images::before {
+        left: -230px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-wrapper {
+        max-width: 720px;
+    }
+
+    .whywe-btn {
+        justify-content: start;
+        margin-top: 30px;
+    }
+
+    .what-included__btn a {
+        padding: 5px 12px;
+        font-size: 14px;
+    }
+
+    .auctions::after {
+        top: -130px;
+        width: 190px;
+        height: 270px;
+    }
+
+    .delivery {
+        padding: 70px 90px;
+    }
+
+    .delivery h2 {
+        margin-bottom: 35px;
+    }
+
+    .delivery::after {
+        width: 410px;
+        height: 220px;
+        bottom: -110px;
+        right: -70px;
+    }
+
+    .reviews-btn .yellow-btn {
+        max-width: 0;
+    }
+    
+    .cars-gallery__wrapper-image {
+        max-width: 310px;
+        margin: auto;
+    }
+    
+    .cars-gallery__wrapper-text {
+        text-align: center;
+    }
+    
+    .contacts-images::after {
+        display: none;
+    }
+    
+    .contacts-images:before {
+        width: 200px;
+        height: 380px;
+        top: -50px;
+        left: -130px;
+    }
+
+    .contacts-images::after {
+        width: 200px;
+        height: 360px;
+        top: 30px;
+        right: -10px;
+    }
+
+    .footer-social ul li {
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .header-wrapper {
+        max-width: 540px;
+    }
+
+    .what-included__lines {
+        display: none;
+    }
+
+    .whywe-bg {
+        padding: 120px 0;
+    }
+
+    .whywe-bg__blocks {
+        margin-top: -130px;
+    }
+
+    .reviews::before {
+        display: none;
+    }
+
+    .reviews-btn {
+        display: block;
+        margin-top: 25px;
+    }
+
+    .reviews-btn .yellow-btn {
+        margin-left: 0;
+    }
+
+    .what-included__btn a {
+        position: absolute;
+        right: 40px;
+        bottom: 0;
+        margin: auto;
+    }
+    
+    .auctions-wrapper__left, .auctions-wrapper__right {
+        width: 100%;
+    }
+
+    .contacts:before {
+        width: 100%;
+    }
+
+    .contacts-images:before {
+        top: -340px;
+        left: unset;
+        right: 50px;
+    }
+
+    .contacts-content {
+        margin-left: 20px;
+    }
+    .contacts:after {
+        display: none;
+    }
+    
+    .reviews-slider {
+        width: 100%;
+    }
+
+    .reviews .swiper-button-next {
+        right: 35px;
+        top: 52%;
+    }
+    
+    .footer-logo {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .header-wrapper {
+        max-width: 360px;
+    }
+
+    .header-wrapper__layout.active {
+        left: 0px;
+    }
+
+    .hero-banner h1 {
+        font-size: 32px;
+        line-height: 50px;
+    }
+    
+    .what-included h2 {
+        margin-bottom: 35px;
+        line-height: 42px;
+    }
+
+    .what-included__text .what-included__btn {
+        display: none;
+    }
+
+    .contacts-images:before {
+        display: none;
+    }
+    .contacts-content {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .what-included {
+        padding-bottom: 60px;
+    }
+
+    .what-included__btn {
+        display: none;
+    }
+
+    .mobile-btn {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .mobile-btn .yellow-btn {
+        position: inherit;
+    }
+
+    .auctions {
+        padding: 80px 0 50px;
+    }
+
+    .auctions::after {
+        top: -120px;
+        width: 160px;
+        height: 220px;
+    }
+
+    .auctions h2 {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .auctions-item {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .auctions-item p, .auctions-item img {
+        width: 100%;
+        margin: auto;
+    } 
+    
+
+    .auctions-item img {
+        max-width: 240px;  
+        margin-bottom: 20px;
+    }
+
+    .auctions-wrapper__right {
+        margin: 0;
+    }
+
+    .delivery {
+        padding: 50px 10px 120px 10px;
+    }
+
+    .delivery-content__item {
+        margin-bottom: 20px;
+    }
+
+    .delivery-content {
+        text-align: center;
+    }
+
+    .reviews {
+        padding: 120px 0 130px;
+    }
+    
+    .contacts {
+        padding-bottom: 40px;
+    }
+
+    .contacts-content {
+        padding-top: 40px;
+    }
+
+    .contacts-content h2 {
+        margin-bottom: 20px;
+    }
+
+    .contacts-content h2:before {
+        left: 100px;
+    }
+    
+    .footer-copyright {
+        padding: 20px 0;
+    }
+}
+
