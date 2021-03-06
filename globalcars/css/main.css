@@ -119,9 +119,7 @@ h2:before {
 }
 
 .header-wrapper__layout {
-    position: absolute;
-    left: -300px;
-    transition: left .5s ease-in-out;
+  display: none;
 }
 
 .header-wrapper__menu li {
