@@ -24,6 +24,11 @@
         max-width: 960px;
     }
 
+
+    .header.active {
+        background: red;
+    }
+
     .header-wrapper__menu,
     .header-wrapper__contacts {
         display: none;

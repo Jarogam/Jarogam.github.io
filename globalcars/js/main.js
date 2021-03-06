@@ -32,7 +32,16 @@ $(document).ready(function () {
   });
 });
 
-
+$(window).on("scroll", function() {
+  if($(window).scrollTop() > 50) {
+      $(".header").addClass("active");
+      console.log('if')
+  } else {
+      //remove the background property so it comes transparent again (defined in your css)
+     $(".header").removeClass("active");
+     console.log('else')
+  }
+});
 
 let swiper = new Swiper('.reviews-slider', {
     slidesPerView: '2.3',
